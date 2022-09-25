@@ -158,6 +158,12 @@ a {
   box-shadow: 1px 1px #ddd;
 }
 
+#arrowRight{
+  position:absolute;
+  top:-21px;
+  left:35px;
+}
+
 
 .divitem{
 flex-grow: 1;

@@ -6,7 +6,7 @@ html { -webkit-text-size-adjust:none; }
 
 body{
 	background-color:#ebebeb;
-	margin:50px;
+	margin:0px;
 	padding:0px;
 	font-size:100%;
 	color:#999;
@@ -55,7 +55,7 @@ li:first-child{
 #menu{
   position:relative;
   width:1035px;
-  margin:10px auto 30px;
+  margin:35px auto 35px;
   text-align: right;
   background-color:#F5F5F5;
   padding:25px 15px;
@@ -83,7 +83,7 @@ a {
   width:1035px;
   background-color:#F5F5F5;
   border-radius:8px;
-  margin:10px auto;
+  margin:0px auto;
   display: inline-grid;
   padding:15px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -142,7 +142,7 @@ a {
   padding:5px 5px 60px 5px;
   background-color:#F5F5F5;
   cursor: pointer;
-  margin:40px auto;
+  margin:0px auto;
   border-radius:5px;
   display:none;
   box-shadow: 1px 1px #ddd;
@@ -152,7 +152,7 @@ a {
   padding:0px 5px 60px 5px;
   background-color:#F5F5F5;
   cursor: pointer;
-  margin:0px auto 40px auto;
+  margin:0px auto 0px auto;
   border-radius:0px 0px 5px 5px;
   display:none;
   box-shadow: 1px 1px #ddd;

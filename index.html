@@ -52,7 +52,6 @@
   <img class="grid-item" onclick="show(3, true)" src="photoplaces/tn/3.jpg">
   <img class="grid-item" onclick="show(2)" src="photoplaces/tn/2.jpg" style="object-position: right">
   <img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
-  <img class="grid-item" onclick="show(29)" src="photoplaces/tn/29.jpg">
   <img class="grid-item" onclick="show(31)" src="photoplaces/tn/31.jpg">
   <img class="grid-item" onclick="show(30)" src="photoplaces/tn/30.jpg">
 </div>
@@ -95,8 +94,9 @@
   <img class="grid-item" onclick="show(1)" src="photoauto/tn/1.jpg" >
 </div>
 
-<div><img id = "bigimg" src="" onclick="showtn()">
-	<img id = "arrowRight" src="arrow.png" onclick="">
+<div id="imgCont">
+	<img id = "bigimg" src="" onclick="showtn()">
+	<p id="imgNum" >15/30</p>
 </div>
 
 <img id = "bigimg2" src="" onclick="showtn()">
@@ -137,6 +137,8 @@
 			{
 				x[i].style.display = 'none';
 			}
+			
+			document.getElementById('imgNum').innerHTML = num + "/30"
 		}
 
 		function showtn() 

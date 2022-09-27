@@ -52,6 +52,19 @@ li:first-child{
   color:#777;
 }
 
+a{
+  color:#aaa;
+  position:relative;
+  margin: 0px 15px 0px 12px;
+  font-size:85%;
+  font-weight: bold;
+  text-transform: lowercase;
+  display:inline;
+  line-height: 1.3;
+}
+
+
+
 #menu{
   position:relative;
   width:1035px;
@@ -97,7 +110,7 @@ a {
   display: inline-grid;
 }
 
-#people{
+#nihon{
   display: none;
 }
 

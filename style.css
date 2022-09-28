@@ -149,12 +149,7 @@ margin-bottom:30px;
 }
 
 .grid-item:hover{
-  //filter: sepia(0%);
-  //filter: grayscale(100%);
-  //transition: box-shadow 0.5s;
-  //transform: scale(1.5);
-  //transform: rotate(3deg);
-  //box-shadow: 2px 2px 2px #bbb;
+
    filter: opacity(80%);
 }
 

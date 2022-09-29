@@ -64,7 +64,7 @@ a{
   font-size:90%;
   text-transform: lowercase;
   display:block;
-  line-height: 0.7;
+  line-height: 1.4;
   text-decoration: none;
   padding:0px;
 }
@@ -75,10 +75,24 @@ a{
 }
 
 .spaceBelow{
-margin-bottom:30px;
+margin-bottom:15px;
 }
 
+.spaceAbove{
+margin-top:50px;
+}
 
+.inline{
+display:inline;	
+}
+
+#contactimg{
+	 height:155px;
+	 width:155px;
+	 object-fit: cover;
+	 margin:80px auto 20px;
+	 border-radius:5px;
+}
 
 
 #menu{
@@ -114,6 +128,14 @@ margin-bottom:30px;
   width:450px;
   display:block;
   grid-template-rows: 1fr;
+
+  background-color:#F5F5F5;
+  border-radius:8px;
+  margin:0px auto;
+
+  padding:15px;
+
+  box-shadow: 1px 1px #ddd;
 }
 
 
@@ -209,7 +231,7 @@ position:relative;
 
 #copy{
 font-size:70%;
-margin-top:100px;
+margin-top:200px;
 color:#ababab;
 }
 

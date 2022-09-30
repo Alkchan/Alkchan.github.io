@@ -250,11 +250,9 @@ color:#ababab;
 }
 
 @media screen and (max-width: 1024px) {
-	#imgCont{
-		max-width:100%;
+	#bigimg{
+		max-width:865px;
 	}
-
-	
 }
 
 @media screen and (max-width: 875px) {
@@ -267,6 +265,9 @@ color:#ababab;
   {
      width:695px;
   }
+	#bigimg{
+		max-width:695px;
+	}
 }
 
 @media screen and (max-width: 670px) {
@@ -283,6 +284,9 @@ color:#ababab;
 	li{
 		margin: 0px 8px 0px 8px;
 	}
+	#bigimg{
+		max-width:525px;
+	}
 }
 
 @media screen and (max-width: 535px) {
@@ -293,7 +297,7 @@ color:#ababab;
   }
   #menu
   {
-     width:355px;
+     width:425px;
 	 text-align:center;
   }
 
@@ -306,5 +310,8 @@ color:#ababab;
 			top: 0px;
 			left: 0px;
 			margin: 0px 0px 20px 0px;
+	}
+	#bigimg{
+		max-width:425px;
 	}
 }

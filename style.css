@@ -253,10 +253,15 @@ color:#ababab;
      width:865px;
      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+  
   #menu
   {
      width:865px;
   }
+  
+  #bigimg{
+		max-width:865px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -322,7 +327,7 @@ color:#ababab;
 			margin: 0px 0px 20px 0px;
 	}
 	#bigimg{
-		max-width:425px;
+		max-width:355px;
 	}
 	.contact2{
 		width:355px;

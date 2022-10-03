@@ -23,7 +23,7 @@
 <body>
 
 
-<div id="menu"><img id="logo" src="logo.png"><li onclick="showCatagory('places')">places</li><li onclick="showCatagory('auto')">automotive</li><li onclick="showCatagory('nihon')">nihon35</li><li onclick="showCatagory('contact')">contact</li></div>
+<div id="menu"><img id="logo" onclick="home()" src="logo.png"><li onclick="showCatagory('places')">places</li><li onclick="showCatagory('auto')">automotive</li><li onclick="showCatagory('nihon')">nihon35</li><li onclick="showCatagory('contact')">contact</li></div>
   
 <div id="places" class="container">
 
@@ -54,7 +54,7 @@
   <img class="grid-item" onclick="show(7)" src="photoplaces/tn/7.jpg">
   <img class="grid-item" onclick="show(6)" src="photoplaces/tn/6.jpg">
   <img class="grid-item" onclick="show(4)" src="photoplaces/tn/4.jpg">
-  <img class="grid-item" onclick="show(3, true)" src="photoplaces/tn/3.jpg">
+  <img class="grid-item" onclick="show(3)" src="photoplaces/tn/3.jpg">
   <img class="grid-item" onclick="show(2)" src="photoplaces/tn/2.jpg" style="object-position: right">
   <img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
 
@@ -230,6 +230,11 @@
 			y[3].style.color = "#777";
 		  }
 
+		}
+		
+		function home()
+		{
+			window.location.href = 'https://www.alkchan.com';
 		}
 		
 		/*document.addEventListener('keydown', function(event) {

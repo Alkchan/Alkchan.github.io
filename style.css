@@ -30,6 +30,7 @@ body{
   position:absolute;
   top:21px;
   left:35px;
+  cursor: pointer;
 }
 
 
@@ -321,10 +322,11 @@ color:#ababab;
 	}
 	
 	#logo{
-		 position: relative;
-			top: 0px;
-			left: 0px;
-			margin: 0px 0px 20px 0px;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		margin: 0px 0px 20px 0px;
+		
 	}
 	#bigimg{
 		max-width:355px;

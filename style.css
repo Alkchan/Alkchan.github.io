@@ -36,27 +36,28 @@ body{
 
 li{
   color:#aaa;
-	position:relative;
+  position:relative;
   margin: 0px 15px 0px 12px;
   font-size:85%;
   font-weight: bold;
   text-transform: lowercase;
-  //background-color:#f2f2f2;
-  //padding:8px;
-  //border-radius:6px;
   display:inline;
   line-height: 1.3;
 }
 
-li:hover{
-  cursor: pointer;
-  color:#555;
-}
 
-li:first-child{
+li:hover{
   cursor: pointer;
   color:#777;
 }
+
+li:first-of-type{
+	color:#777;
+}
+}
+
+
+
 
 span{
 	font-size:120%;

@@ -7,7 +7,6 @@
 	
 	<title>Alkan Hassan - Film and Digital Photography</title>
 	
-	<link href="normalize.css" rel="stylesheet" type="text/css" />
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	
 	<link href='http://fonts.googleapis.com/css?family=Arimo:400,700|Galdeano' rel='stylesheet' type='text/css'>
@@ -147,32 +146,58 @@
 </body>
 
 	<script>
-		var catagory = "places";
-		var url = "photoplaces/";
-		var number = 1;
-
-
-		//console.log(url + "5" + ".jpg");
-
-		function show(num, additional)
+		
+		const urlString = window.location.search;
+		const urlParams = new URLSearchParams(urlString);
+		var catagory = catagory = urlParams.get('c');
+		var photoNum = urlParams.get('p');
+		
+		// set defaults if no urlParams exist
+		if (catagory == null)
 		{
-			number = num;
+			catagory = "places";
+		}
+		
+		if (photoNum == null)
+		{
+			photoNum = 0;
+		}
+		
+		var url = "photoplaces/";
+
+		//Show bold menu item based on url catagory
+		var y = document.getElementsByTagName("li");
+		var i;
+		for (i = 0; i < y.length; i++)
+		{
+			y[i].style.color = "#aaa";
+		}
 			
+		if (catagory == 'places')
+		{
+			y[0].style.color = "#777";
+		}
+		else if (catagory == 'auto')
+		{
+			y[1].style.color = "#777";
+		}
+		else if (catagory == 'nihon')
+		{
+			y[2].style.color = "#777";
+		}
+		else if (catagory == 'contact')
+		{
+			y[3].style.color = "#777";
+		}
+		
+		url = "photo" + catagory +"/";
+		
+		if (photoNum > 0)
+		{
 			//show larger photo
-			document.getElementById('bigimg').src = url + number + ".jpg"
+			document.getElementById('bigimg').src = url + photoNum + ".jpg"
 			document.getElementById('bigimg').style.display = "block";
 			
-			
-			if (additional == true)
-			{
-				document.getElementById('bigimg').style.paddingBottom = "5px";
-				document.getElementById('bigimg').style.marginBottom = "0px";
-				document.getElementById('bigimg2').src = url + number + "b.jpg"
-				document.getElementById('bigimg2').style.display = "block";
-			}
-			
-			//document.getElementById('places').style.display = "none";
-			//document.getElementsByClassName('container').style.display = "none";
 			//hide all container classes
 			var x = document.getElementsByClassName("container");
 			var i;
@@ -181,21 +206,11 @@
 				x[i].style.display = 'none';
 			}
 			
-			document.getElementById('imgNum').innerHTML = number;
+			//document.getElementById('imgNum').innerHTML = photoNum;
 		}
-
-		function showtn() 
+		else
 		{
-			document.getElementById('bigimg').style.paddingBottom = "60px";
-			document.getElementById('bigimg').style.marginBottom = "40px";
-			document.getElementById(catagory).style.display = "inline-grid";
-			document.getElementById('bigimg').style.display = "none";
-			document.getElementById('bigimg2').style.display = "none";
-		}
-
-		function showCatagory(catName)
-		{
-		  
+			//Hide all containers
 			var x = document.getElementsByClassName("container");
 			var i;
 			for (i = 0; i < x.length; i++)
@@ -204,35 +219,28 @@
 			}
 			document.getElementById("contact").style.display = "none";
 		  
-		  catagory = catName;
-		  document.getElementById(catagory).style.display = "inline-grid";
-		  document.getElementById('bigimg').style.display = "none";
-		  url = "photo" + catagory +"/";
+			document.getElementById(catagory).style.display = "inline-grid";
+			document.getElementById('bigimg').style.display = "none";
+			url = "photo" + catagory +"/";
 		  
-		  var y = document.getElementsByTagName("li");
-			var i;
-			for (i = 0; i < y.length; i++)
-			{
-			  y[i].style.color = "#aaa";
-			}
-		  
-		  if (catagory == 'places')
-		  {
-			y[0].style.color = "#777";
-		  }
-		  else if (catagory == 'auto')
-		  {
-			y[1].style.color = "#777";
-		  }
-		  else if (catagory == 'nihon')
-		  {
-			y[2].style.color = "#777";
-		  }
-		  else if (catagory == 'contact')
-		  {
-			y[3].style.color = "#777";
-		  }
+		}
 
+		function show(num, additional)
+		{
+			window.location.href = "index.html?c=" + catagory + "&p=" + num;
+		}
+
+		function showtn() 
+		{
+			num = 0;
+			window.location.href = "index.html?c=" + catagory + "&p=" + num;	
+		}
+
+		function showCatagory(catName)
+		{
+			num = 0;
+			catagory = catName;
+			window.location.href = "index.html?c=" + catagory + "&p=" + num;
 		}
 		
 		function home()
@@ -248,6 +256,7 @@
 				document.getElementById('bigimg').src = url + number++ + ".jpg"
 			}
 		});*/
+		
 	</script>
 
 </html>

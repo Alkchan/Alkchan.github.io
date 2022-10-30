@@ -22,11 +22,9 @@
 <body>
 
 
-<div id="menu"><img id="logo" onclick="home()" src="logo.png"><li onclick="showCatagory('places')">places</li><li onclick="showCatagory('auto')">automotive</li><li onclick="showCatagory('nihon')">nihon35</li><li onclick="showCatagory('contact')">contact</li></div>
+<div id="menu"><img id="logo" onclick="home()" src="logo.png"><li onclick="showCatagory('places')">places<div class="triangleUp"></div></li><li onclick="showCatagory('auto')">automotive<div class="triangleUp"></div></li><li onclick="showCatagory('nihon')">nihon35<div class="triangleUp"></div></li><li onclick="showCatagory('contact')">contact<div class="triangleUp"></div></li></div>
   
 <div id="places" class="container">
-
-
 	<img class="grid-item" onclick="show(31)" src="photoplaces/tn/31.jpg">
 	<img class="grid-item" onclick="show(27)" src="photoplaces/tn/27.jpg">
 	<img class="grid-item" onclick="show(26)" src="photoplaces/tn/26.jpg">
@@ -38,26 +36,25 @@
 	<img class="grid-item" onclick="show(20)" src="photoplaces/tn/20.jpg">
 	<img class="grid-item" onclick="show(19)" src="photoplaces/tn/19.jpg">
 	<img class="grid-item" onclick="show(18)" src="photoplaces/tn/18.jpg">
-  <img class="grid-item" onclick="show(28)" src="photoplaces/tn/28.jpg" style="object-position: -10px;">
-  <img class="grid-item" onclick="show(17)" src="photoplaces/tn/17.jpg">
-  <img class="grid-item" onclick="show(30)" src="photoplaces/tn/30.jpg">
-  <img class="grid-item" onclick="show(16)" src="photoplaces/tn/16.jpg">
-  <img class="grid-item" onclick="show(15)" src="photoplaces/tn/15.jpg">
-  <img class="grid-item" onclick="show(14)" src="photoplaces/tn/14.jpg"style="object-position: right">
-  <img class="grid-item" onclick="show(13)" src="photoplaces/tn/13.jpg" style="object-position: right">
-  <img class="grid-item" onclick="show(11)" src="photoplaces/tn/11.jpg">
-  <img class="grid-item" onclick="show(10)" src="photoplaces/tn/10.jpg">
+	<img class="grid-item" onclick="show(28)" src="photoplaces/tn/28.jpg" style="object-position: -10px;">
+	<img class="grid-item" onclick="show(17)" src="photoplaces/tn/17.jpg">
+	<img class="grid-item" onclick="show(30)" src="photoplaces/tn/30.jpg">
+	<img class="grid-item" onclick="show(16)" src="photoplaces/tn/16.jpg">
+	<img class="grid-item" onclick="show(15)" src="photoplaces/tn/15.jpg">
+	<img class="grid-item" onclick="show(14)" src="photoplaces/tn/14.jpg"style="object-position: right">
+	<img class="grid-item" onclick="show(13)" src="photoplaces/tn/13.jpg" style="object-position: right">
+	<img class="grid-item" onclick="show(11)" src="photoplaces/tn/11.jpg">
+	<img class="grid-item" onclick="show(10)" src="photoplaces/tn/10.jpg">
 	<div><img class="grid-item" onclick="show(34)" src="photoplaces/tn/34.jpg" style="object-position: -50px">><img class="newIcon" src="newIcon.png"></div>
-  <img class="grid-item" onclick="show(9)" src="photoplaces/tn/9.jpg">
-  <img class="grid-item" onclick="show(8)" src="photoplaces/tn/8.jpg" style="object-position: right">
-  <img class="grid-item" onclick="show(7)" src="photoplaces/tn/7.jpg">
+	<img class="grid-item" onclick="show(9)" src="photoplaces/tn/9.jpg">
+	<img class="grid-item" onclick="show(8)" src="photoplaces/tn/8.jpg" style="object-position: right">
+	<img class="grid-item" onclick="show(7)" src="photoplaces/tn/7.jpg">
 	<div><img class="grid-item" onclick="show(33)" src="photoplaces/tn/33.jpg"><img class="newIcon" src="newIcon.png"></div>
-  <img class="grid-item" onclick="show(6)" src="photoplaces/tn/6.jpg">
-  <img class="grid-item" onclick="show(4)" src="photoplaces/tn/4.jpg">
-  <img class="grid-item" onclick="show(3)" src="photoplaces/tn/3.jpg">
-  <img class="grid-item" onclick="show(2)" src="photoplaces/tn/2.jpg" style="object-position: right">
-  <img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
-
+	<img class="grid-item" onclick="show(6)" src="photoplaces/tn/6.jpg">
+	<img class="grid-item" onclick="show(4)" src="photoplaces/tn/4.jpg">
+	<img class="grid-item" onclick="show(3)" src="photoplaces/tn/3.jpg">
+	<img class="grid-item" onclick="show(2)" src="photoplaces/tn/2.jpg" style="object-position: right">
+	<img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
 </div>
 
 
@@ -152,6 +149,10 @@
 		const urlParams = new URLSearchParams(urlString);
 		var catagory = catagory = urlParams.get('c');
 		var photoNum = urlParams.get('p');
+		//var textNum = urlParams.get('n');
+		
+		//const placeNumbers = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1];
+		//console.log( placeNumbers.indexOf(photoNum) );
 		
 		// set defaults if no urlParams exist
 		if (catagory == null)
@@ -176,19 +177,23 @@
 			
 		if (catagory == 'places')
 		{
-			y[0].style.color = "#777";
+			y[0].style.color = "#666";
+			document.querySelector("li:nth-child(2) > .triangleUp").style.display = "block";
 		}
 		else if (catagory == 'auto')
 		{
-			y[1].style.color = "#777";
+			y[1].style.color = "#666";
+			document.querySelector("li:nth-child(3) > .triangleUp").style.display = "block";
 		}
 		else if (catagory == 'nihon')
 		{
-			y[2].style.color = "#777";
+			y[2].style.color = "#666";
+			document.querySelector("li:nth-child(4) > .triangleUp").style.display = "block";
 		}
 		else if (catagory == 'contact')
 		{
-			y[3].style.color = "#777";
+			y[3].style.color = "#666";
+			document.querySelector("li:nth-child(5) > .triangleUp").style.display = "block";
 		}
 		
 		url = "photo" + catagory +"/";
@@ -198,6 +203,7 @@
 			//show larger photo
 			document.getElementById('bigimg').src = url + photoNum + ".jpg"
 			document.getElementById('bigimg').style.display = "block";
+			document.getElementById('imgCont').style.display = "block";
 			
 			//hide all container classes
 			var x = document.getElementsByClassName("container");
@@ -207,7 +213,17 @@
 				x[i].style.display = 'none';
 			}
 			
-			//document.getElementById('imgNum').innerHTML = photoNum;
+			/*if (textNum < 10)
+			{
+				document.getElementById("imgNum").innerHTML = "0" + textNum;
+			}
+			else
+			{
+				document.getElementById("imgNum").innerHTML = textNum;
+			}*/
+			
+			
+		
 		}
 		else
 		{
@@ -222,6 +238,7 @@
 		  
 			document.getElementById(catagory).style.display = "inline-grid";
 			document.getElementById('bigimg').style.display = "none";
+			document.getElementById('imgCont').style.display = "none";
 			url = "photo" + catagory +"/";
 		  
 		}
@@ -229,6 +246,7 @@
 		function show(num, additional)
 		{
 			window.location.href = "index.html?c=" + catagory + "&p=" + num;
+			
 		}
 
 		function showtn() 

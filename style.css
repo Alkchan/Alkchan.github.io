@@ -55,6 +55,30 @@ li:first-of-type{
 	color:#777;
 }
 
+.triangleUp{
+	width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 7px solid #555;
+    position: absolute;
+    top: 22px;
+    left: 0px;
+	display:none;
+}
+
+li:nth-child(2) > .triangleUp{
+	left:15px;
+}
+li:nth-child(3) > .triangleUp{
+	left:28px;
+}
+li:nth-child(4) > .triangleUp{
+	left:20px;
+}
+li:nth-child(5) > .triangleUp{
+	left:19px;
+}
 
 
 
@@ -236,10 +260,18 @@ position:relative;
 #imgNum{
 	position: absolute;
     display: block;
-    bottom: 10px;
+    bottom: 2px;
     text-align: left;
-    margin-left: 20px;
-    font-size: 80%;
+    margin: 0px;
+    font-size: 300%;
+	line-height:60px;
+	height:60px;
+	left:10px;
+	vertical-align:middle;
+	font-family:system-ui;
+	font-weight:bold;
+	color:#e1e1e1;
+	
 }
 
 #copy{
@@ -253,6 +285,8 @@ color:#ababab;
 	top:-6px;
 	left:-6px;
 }
+
+
 
 
 
@@ -331,9 +365,10 @@ color:#ababab;
 	
 	#logo{
 		position: relative;
-		top: 0px;
+		display: block;
 		left: 0px;
-		margin: 0px 0px 20px 0px;
+		top:0px;
+		margin: 0px auto 20px;
 		
 	}
 	#bigimg{

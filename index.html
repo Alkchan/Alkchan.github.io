@@ -24,6 +24,8 @@
 
 <div id="menu"><img id="logo" onclick="home()" src="logo.png"><li onclick="showCatagory('places')">places<div class="triangleUp"></div></li><li onclick="showCatagory('auto')">automotive<div class="triangleUp"></div></li><li onclick="showCatagory('nihon')">nihon35<div class="triangleUp"></div></li><li onclick="showCatagory('contact')">contact<div class="triangleUp"></div></li></div>
   
+
+  
 <div id="places" class="container">
 	<img class="grid-item" onclick="show(31)" src="photoplaces/tn/31.jpg">
 	<img class="grid-item" onclick="show(27)" src="photoplaces/tn/27.jpg">
@@ -57,8 +59,6 @@
 	<img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
 </div>
 
-
-
 <div id="auto" class="container">
   <div><img class="grid-item" onclick="show(19)" src="photoauto/tn/19.jpg" ><img class="newIcon" src="newIcon.png"></div>
   <img class="grid-item" onclick="show(18)" src="photoauto/tn/18.jpg" >
@@ -76,6 +76,7 @@
   <img class="grid-item" onclick="show(8)" src="photoauto/tn/8.jpg" >
   <img class="grid-item" onclick="show(7)" src="photoauto/tn/7.jpg" >
   <img class="grid-item" onclick="show(6)" src="photoauto/tn/6.jpg" >
+  <img class="grid-item" onclick="show(23)" src="photoauto/tn/23.jpg" >
   <img class="grid-item" onclick="show(5)" src="photoauto/tn/5.jpg" >
   <img class="grid-item" onclick="show(4)" src="photoauto/tn/4.jpg" >
   <img class="grid-item" onclick="show(3)" src="photoauto/tn/3.jpg" >
@@ -132,6 +133,7 @@
 <div id="imgCont">
 	<img id = "bigimg" src="" onclick="showtn()">
 	<!--<p id="imgNum" >15</p>-->
+	<p id="imgNum" >15</p>
 </div>
 
 <img id = "bigimg2" src="" onclick="showtn()">
@@ -149,10 +151,9 @@
 		const urlParams = new URLSearchParams(urlString);
 		var catagory = catagory = urlParams.get('c');
 		var photoNum = urlParams.get('p');
-		//var textNum = urlParams.get('n');
 		
-		//const placeNumbers = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1];
-		//console.log( placeNumbers.indexOf(photoNum) );
+		
+		
 		
 		// set defaults if no urlParams exist
 		if (catagory == null)
@@ -164,6 +165,12 @@
 		{
 			photoNum = 0;
 		}
+		
+
+		const placeOrder = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1];
+		const autoOrder = [19,18,17,16,15,14,13,12,11,22,10,9,21,8,7,6,23,5,4,3,2];
+		const nihonOrder = [14,20,15,3,5,6,7,8,9,10,11,12,13,1,16,17,18,19,2,21,22,23,24,25,26,27,28,29,30,31];
+		console.log(placeOrder.length);
 		
 		var url = "photoplaces/";
 
@@ -179,16 +186,19 @@
 		{
 			y[0].style.color = "#666";
 			document.querySelector("li:nth-child(2) > .triangleUp").style.display = "block";
+			var textNum = placeOrder.indexOf(parseInt(photoNum),0) + 1;
 		}
 		else if (catagory == 'auto')
 		{
 			y[1].style.color = "#666";
 			document.querySelector("li:nth-child(3) > .triangleUp").style.display = "block";
+			var textNum = autoOrder.indexOf(parseInt(photoNum),0) + 1;
 		}
 		else if (catagory == 'nihon')
 		{
 			y[2].style.color = "#666";
 			document.querySelector("li:nth-child(4) > .triangleUp").style.display = "block";
+			var textNum = nihonOrder.indexOf(parseInt(photoNum),0) + 1;
 		}
 		else if (catagory == 'contact')
 		{
@@ -213,14 +223,14 @@
 				x[i].style.display = 'none';
 			}
 			
-			/*if (textNum < 10)
+			if (textNum < 10)
 			{
 				document.getElementById("imgNum").innerHTML = "0" + textNum;
 			}
 			else
 			{
 				document.getElementById("imgNum").innerHTML = textNum;
-			}*/
+			}
 			
 			
 		
@@ -242,6 +252,17 @@
 			url = "photo" + catagory +"/";
 		  
 		}
+		
+		
+		/*document.addEventListener('keydown', function(event) {
+			if(event.keyCode == 37) {
+				photoNum -=1;
+			}
+			else if(event.keyCode == 39) {
+				photoNum +=1;
+			}
+		});*/
+		
 
 		function show(num, additional)
 		{
@@ -264,7 +285,7 @@
 		
 		function home()
 		{
-			window.location.href = 'https://www.alkchan.com';
+			window.location.href = 'index.html';
 		}
 		
 		/*document.addEventListener('keydown', function(event) {

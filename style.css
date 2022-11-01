@@ -11,7 +11,7 @@ color:#ababab;
 
 body{
 	background-color:#ebebeb;
-	margin:0px;
+	margin:0px 0px 100px 0px;
 	padding:0px;
 	font-size:100%;
 	color:#999;
@@ -212,6 +212,7 @@ display:inline;
    filter: opacity(80%);
 }
 
+
 .grid-item-blank{
   background-color:#F5F5F5;
   border-radius:5px;
@@ -244,6 +245,10 @@ display:inline;
   box-shadow: 1px 1px #ddd;
 }
 
+
+
+
+
 #arrowRight{
   position:absolute;
   top:-21px;
@@ -252,9 +257,10 @@ display:inline;
 
 #imgCont{
 display:block;
-max-width:1024px;
+//max-width:1024px;
 margin:0px auto;
 position:relative;
+width:fit-content;
 }
 
 #imgNum{
@@ -270,7 +276,7 @@ position:relative;
 	vertical-align:middle;
 	font-family:system-ui;
 	font-weight:bold;
-	color:#e1e1e1;
+	color:#e7e7e7;
 	
 }
 

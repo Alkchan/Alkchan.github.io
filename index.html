@@ -26,7 +26,7 @@
   
 
   
-<div id="places" class="container">
+<div id="places" class="container hide">
 	<img class="grid-item" onclick="show(31)" src="photoplaces/tn/31.jpg">
 	<img class="grid-item" onclick="show(27)" src="photoplaces/tn/27.jpg">
 	<img class="grid-item" onclick="show(26)" src="photoplaces/tn/26.jpg">
@@ -34,7 +34,7 @@
 	<img class="grid-item" onclick="show(23)" src="photoplaces/tn/23.jpg">
 	<img class="grid-item" onclick="show(22)" src="photoplaces/tn/22.jpg">
 	<img class="grid-item" onclick="show(21)" src="photoplaces/tn/21.jpg">
-	<div><img class="grid-item" onclick="show(32)" src="photoplaces/tn/32.jpg"><img class="newIcon" src="newIcon.png"></div>
+	<div><img class="grid-item" onclick="show(32)" src="photoplaces/tn/32.jpg"></div>
 	<img class="grid-item" onclick="show(20)" src="photoplaces/tn/20.jpg">
 	<img class="grid-item" onclick="show(19)" src="photoplaces/tn/19.jpg">
 	<img class="grid-item" onclick="show(18)" src="photoplaces/tn/18.jpg">
@@ -47,11 +47,11 @@
 	<img class="grid-item" onclick="show(13)" src="photoplaces/tn/13.jpg" style="object-position: right">
 	<img class="grid-item" onclick="show(11)" src="photoplaces/tn/11.jpg">
 	<img class="grid-item" onclick="show(10)" src="photoplaces/tn/10.jpg">
-	<div><img class="grid-item" onclick="show(34)" src="photoplaces/tn/34.jpg" style="object-position: -50px">><img class="newIcon" src="newIcon.png"></div>
+	<div><img class="grid-item" onclick="show(34)" src="photoplaces/tn/34.jpg" style="object-position: -50px">></div>
 	<img class="grid-item" onclick="show(9)" src="photoplaces/tn/9.jpg">
 	<img class="grid-item" onclick="show(8)" src="photoplaces/tn/8.jpg" style="object-position: right">
 	<img class="grid-item" onclick="show(7)" src="photoplaces/tn/7.jpg">
-	<div><img class="grid-item" onclick="show(33)" src="photoplaces/tn/33.jpg"><img class="newIcon" src="newIcon.png"></div>
+	<div><img class="grid-item" onclick="show(33)" src="photoplaces/tn/33.jpg"></div>
 	<img class="grid-item" onclick="show(6)" src="photoplaces/tn/6.jpg">
 	<img class="grid-item" onclick="show(4)" src="photoplaces/tn/4.jpg">
 	<img class="grid-item" onclick="show(3)" src="photoplaces/tn/3.jpg">
@@ -59,8 +59,8 @@
 	<img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
 </div>
 
-<div id="auto" class="container">
-  <div><img class="grid-item" onclick="show(19)" src="photoauto/tn/19.jpg" ><img class="newIcon" src="newIcon.png"></div>
+<div id="auto" class="container hide">
+  <div><img class="grid-item" onclick="show(19)" src="photoauto/tn/19.jpg"></div>
   <img class="grid-item" onclick="show(18)" src="photoauto/tn/18.jpg" >
   <img class="grid-item" onclick="show(17)" src="photoauto/tn/17.jpg" >
   <img class="grid-item" onclick="show(16)" src="photoauto/tn/16.jpg" >
@@ -69,7 +69,7 @@
   <img class="grid-item" onclick="show(13)" src="photoauto/tn/13.jpg" >
   <img class="grid-item" onclick="show(12)" src="photoauto/tn/12.jpg" >
   <img class="grid-item" onclick="show(11)" src="photoauto/tn/11.jpg" style="object-position: left">
-  <div><img class="grid-item" onclick="show(22)" src="photoauto/tn/22.jpg" ><img class="newIcon" src="newIcon.png"></div>
+  <div><img class="grid-item" onclick="show(22)" src="photoauto/tn/22.jpg"></div>
   <img class="grid-item" onclick="show(10)" src="photoauto/tn/10.jpg" >
   <img class="grid-item" onclick="show(9)" src="photoauto/tn/9.jpg" >
   <img class="grid-item" onclick="show(21)" src="photoauto/tn/21.jpg" >
@@ -83,7 +83,7 @@
   <img class="grid-item" onclick="show(2)" src="photoauto/tn/2.jpg" >
 </div>
 
-<div id="nihon" class="container">
+<div id="nihon" class="container hide">
   <img class="grid-item" onclick="show(14)" src="photonihon/tn/14.jpg"  style="object-position: left">
   <img class="grid-item" onclick="show(20)" src="photonihon/tn/20.jpg" >
   <img class="grid-item" onclick="show(15)" src="photonihon/tn/15.jpg" >
@@ -115,8 +115,10 @@
   <img class="grid-item" onclick="show(30)" src="photonihon/tn/30.jpg" >
   <img class="grid-item" onclick="show(31)" src="photonihon/tn/31.jpg" >
 </div>
+<p id="nihon35link" onclick="nihon35()">View archived nihon35.com site</p>
 
-<div id="contact" class="contact2">
+
+<div id="contact" class="contact2 hide">
 <p>Alkchan - Film and Digital Photography</p>
 <span class="bold spaceBelow spaceAbove">Contact</span>
 <a class="inline" href="mailto:alkanhassan@outlook.com">email</a><a class="inline" target=”_blank” href="https://www.instagram.com/alkchan/">instagram</a>
@@ -130,7 +132,7 @@
 <p id="copy">Copyright © 2022 Alkan Hassan</p>
 </div>
 
-<div id="imgCont">
+<div id="imgCont" >
 	<img id = "bigimg" src="" onclick="showtn()">
 	<!--<p id="imgNum" >15</p>-->
 	<p id="imgNum" >15</p>
@@ -170,9 +172,11 @@
 		const placeOrder = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1];
 		const autoOrder = [19,18,17,16,15,14,13,12,11,22,10,9,21,8,7,6,23,5,4,3,2];
 		const nihonOrder = [14,20,15,3,5,6,7,8,9,10,11,12,13,1,16,17,18,19,2,21,22,23,24,25,26,27,28,29,30,31];
-		console.log(placeOrder.length);
+		//console.log(placeOrder.length);
 		
 		var url = "photoplaces/";
+		
+
 
 		//Show bold menu item based on url catagory
 		var y = document.getElementsByTagName("li");
@@ -210,11 +214,6 @@
 		
 		if (photoNum > 0)
 		{
-			//show larger photo
-			document.getElementById('bigimg').src = url + photoNum + ".jpg"
-			document.getElementById('bigimg').style.display = "block";
-			document.getElementById('imgCont').style.display = "block";
-			
 			//hide all container classes
 			var x = document.getElementsByClassName("container");
 			var i;
@@ -222,6 +221,7 @@
 			{
 				x[i].style.display = 'none';
 			}
+			document.getElementById("contact").style.display = "none";
 			
 			if (textNum < 10)
 			{
@@ -232,8 +232,13 @@
 				document.getElementById("imgNum").innerHTML = textNum;
 			}
 			
+			//show larger photo
+			setTimeout(function(){
+				document.getElementById('bigimg').src = url + photoNum + ".jpg";
+				document.getElementById("imgCont").style.opacity = "100%";
+			}, 50);
 			
-		
+
 		}
 		else
 		{
@@ -247,10 +252,48 @@
 			document.getElementById("contact").style.display = "none";
 		  
 			document.getElementById(catagory).style.display = "inline-grid";
-			document.getElementById('bigimg').style.display = "none";
+			
+			
+			
+			setTimeout(function(){
+				//document.getElementById(catagory).classList.remove("hide");
+				//document.getElementById(catagory).classList.add("show");
+				document.getElementById(catagory).style.opacity = "100%";
+				
+				if (catagory == "nihon")
+				{
+					document.getElementById("nihon35link").style.opacity = "100%";
+				}
+			
+			}, 50);
+			
+
+			//document.getElementById(catagory).classList.add("show");
+			
+			
+			//document.getElementById('bigimg').addEventListener('transitionend', function() { document.getElementById('bigimg').style.display = "none"; });
+			//document.getElementById('bigimg').addEventListener('transitionend', function() { document.getElementById('imgCont').style.display = "none"; });
+			//document.getElementById('bigimg').addEventListener("load", function () {document.getElementById('bigimg').className = "fadeout";  } );
+
+			//document.getElementById('bigimg').style.display = "none";
+			//document.getElementById("imgCont").classList = "hide"
 			document.getElementById('imgCont').style.display = "none";
 			url = "photo" + catagory +"/";
-		  
+			
+
+			
+			
+		}
+		
+		function test()
+		{
+			var x = document.getElementsByClassName("container");
+			var i;
+			for (i = 0; i < x.length; i++)
+			{
+			  x[i].style.display = 'none';
+			}
+			document.getElementById("contact").style.display = "none";
 		}
 		
 		
@@ -266,14 +309,27 @@
 
 		function show(num, additional)
 		{
-			window.location.href = "index.html?c=" + catagory + "&p=" + num;
+			document.getElementById(catagory).style.opacity = "0%";
 			
+			if (catagory == "nihon")
+			{
+				document.getElementById("nihon35link").style.opacity = "0%";
+			}
+			
+			setTimeout(function(){
+				window.location.href = "index.html?c=" + catagory + "&p=" + num;
+			}, 120);			
 		}
 
 		function showtn() 
 		{
 			num = 0;
-			window.location.href = "index.html?c=" + catagory + "&p=" + num;	
+			
+			document.getElementById("imgCont").style.opacity = "0%";
+			
+			setTimeout(function(){
+				window.location.href = "index.html?c=" + catagory + "&p=" + num;
+			}, 120);			
 		}
 
 		function showCatagory(catName)
@@ -286,6 +342,11 @@
 		function home()
 		{
 			window.location.href = 'index.html';
+		}
+		
+		function nihon35()
+		{
+			window.open("https://www.alkchan.com/nihon35/");
 		}
 		
 		/*document.addEventListener('keydown', function(event) {

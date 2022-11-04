@@ -26,6 +26,8 @@ body{
 }
 
 
+
+
 #logo{
   position:absolute;
   top:21px;
@@ -71,7 +73,7 @@ li:nth-child(2) > .triangleUp{
 	left:15px;
 }
 li:nth-child(3) > .triangleUp{
-	left:28px;
+	left:30px;
 }
 li:nth-child(4) > .triangleUp{
 	left:20px;
@@ -143,69 +145,103 @@ display:inline;
 }
 
 
-
-
 .container{
   width:1035px;
   background-color:#F5F5F5;
   border-radius:8px;
   margin:0px auto;
-  display: inline-grid;
+  //display: inline-grid;
   padding:15px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
  //grid-template-rows: 1fr 1fr 1fr;
   column-gap: 15px;
   row-gap: 15px;
   box-shadow: 1px 1px #ddd;
+  transition:opacity 0.3s;
+
+
+}
+
+.container div::after{
+	content:url(newIcon.png);
+	position:absolute;
+	top:-6px;
+	left:-6px;
+	animation-duration: 2s;
+	//animation-name: shuffle;
+	animation-iteration-count: infinite;
+	//animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	border-radius:10px;
+}
+
+@keyframes shuffle {
+	0%   {left:-8px;}
+	50%   {left:-4px;}
+	100%   {left:-8px;}
+}
+
+#nihon35link{
+  display:block;
+  width:fit-content;
+  background-color:#F5F5F5;
+  border-radius:8px;
+  margin:20px auto 0px;
+  padding:8px;
+  box-shadow: 1px 1px #ddd;
+  opacity:0%;
+  transition:opacity 0.3s;
+  font-size:80%;
+  cursor:pointer;
+}
+
+#nihon35link:hover{
+	color:#cf0000;
 }
 
 
 .contact2{
   grid-template-columns: 1fr;
   width:400px;
-  display:block;
   grid-template-rows: 1fr;
-
   background-color:#F5F5F5;
   border-radius:8px;
   margin:0px auto;
-
   padding:15px;
-
   box-shadow: 1px 1px #ddd;
+  transition:opacity 0.3s;
 }
 
 
 
 #places{
-  display: inline-grid;
+  display: none;
+  opacity:0%;
 }
 
 #nihon{
   display: none;
+  opacity:0%;
 }
 
 #auto{
   display: none;
+  opacity:0%;
 }
 
 #contact{
-  display: none;
+  display:none;
+  opacity:0%;
 }
 
 .grid-item{
-  //background-color:#fff;
   border-radius:4px;
-  //padding:4%;
   width:100%;
   height:155px;
   object-fit: cover;
-  //box-shadow: 1px 1px #ddd;
-  //filter: grayscale(0%);
-  //filter: sepia(20%);
-  filter: opacity(100%);
   cursor: pointer;
 }
+
 
 .grid-item:hover{
 
@@ -231,9 +267,12 @@ display:inline;
   cursor: pointer;
   margin:0px auto;
   border-radius:5px;
-  display:none;
   box-shadow: 1px 1px #ddd;
 }
+
+
+
+
 
 #bigimg2{
   padding:0px 5px 60px 5px;
@@ -256,11 +295,12 @@ display:inline;
 }
 
 #imgCont{
-display:block;
-//max-width:1024px;
-margin:0px auto;
-position:relative;
-width:fit-content;
+	display:block;
+	margin:0px auto;
+	position:relative;
+	width:fit-content;
+	transition:opacity 0.3s;
+	opacity:0%;
 }
 
 #imgNum{

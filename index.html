@@ -233,10 +233,22 @@
 			}
 			
 			//show larger photo
-			setTimeout(function(){
-				document.getElementById('bigimg').src = url + photoNum + ".jpg";
-				document.getElementById("imgCont").style.opacity = "100%";
-			}, 50);
+			
+			document.getElementById('bigimg').src = url + photoNum + ".jpg";
+			document.getElementById('bigimg').addEventListener("load", function () { 
+				setTimeout(function(){
+					document.getElementById("imgCont").style.opacity = "100%";
+				}, 50);
+			} );
+			
+			/*
+			window.addEventListener("load", event => {
+				var image = document.getElementById('bigimg');
+				var isLoaded = image.complete && image.naturalHeight !== 0;
+				alert(isLoaded);
+			});*/
+			
+
 			
 
 		}

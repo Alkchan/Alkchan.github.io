@@ -177,7 +177,6 @@
 		var url = "photoplaces/";
 		
 
-
 		//Show bold menu item based on url catagory
 		var y = document.getElementsByTagName("li");
 		var i;
@@ -238,6 +237,7 @@
 			document.getElementById('bigimg').addEventListener("load", function () { 
 				setTimeout(function(){
 					document.getElementById("imgCont").style.opacity = "100%";
+		
 				}, 50);
 			} );
 			
@@ -322,6 +322,7 @@
 		function show(num, additional)
 		{
 			document.getElementById(catagory).style.opacity = "0%";
+
 			
 			if (catagory == "nihon")
 			{
@@ -338,6 +339,7 @@
 			num = 0;
 			
 			document.getElementById("imgCont").style.opacity = "0%";
+
 			
 			setTimeout(function(){
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;

@@ -133,15 +133,12 @@
 </div>
 
 
-<div>
-	<div id="loading">
-		<div class="lds-dual-ring"></div>
-	</div>
+
 	<div id="imgCont">
 		<img id = "bigimg" src="" onclick="showtn()">
 		<p id="imgNum" >15</p>
 	</div>
-</div>
+
 
 
 
@@ -246,13 +243,13 @@
 			
 			document.getElementById('bigimg').src = url + photoNum + ".jpg";	
 			//document.getElementById("loading").style.display = "block";		
-			document.getElementById("loading").style.opacity = "100%";				
+			//document.getElementById("loading").style.opacity = "100%";				
 			 
 			document.getElementById('bigimg').addEventListener("load", function () { 
 				setTimeout(function(){
 					document.getElementById("imgCont").style.opacity = "100%";
 					//document.getElementById("loading").style.display = "none";	
-					document.getElementById("loading").style.opacity = "0%";
+					//document.getElementById("loading").style.opacity = "0%";
 				}, 50);
 			} );
 			

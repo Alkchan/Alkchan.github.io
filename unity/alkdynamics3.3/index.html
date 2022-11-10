@@ -4,9 +4,44 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Alk Dynamics 3.1</title>
-  </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=1400 height=788 style="width: 1400px; height: 788px; background: #231F20"></canvas>
+ 
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	
+	p{
+		margin:10px;
+	}
+
+body {
+		background-color: #e3e3e3;
+		margin-top:50px;
+		font-size: 90%;
+		color: #555;
+		font-family: 'Arimo', sans-serif;
+		text-align: center;
+		
+	}
+	
+	#unity-canvas{
+		border:10px solid #fff;
+		border-radius:5px;
+	}
+	
+	div{
+		width:1400px;
+		text-align: left;
+		margin:auto;
+	}
+</style>
+
+ </head>
+  <body >
+	<div>
+		<p>Alk Dynamics v3.3</p>
+	</div>
+	<canvas id="unity-canvas" width=1400 height=788 style="width: 1400px; height: 788px; background: #231F20"></canvas>
     <script src="Build/alkdynamics3.2.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {

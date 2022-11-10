@@ -29,12 +29,17 @@ body {
 		border:10px solid #fff;
 		border-radius:5px;
 		box-shadow: 1px 1px 4px #c9c9c9;
+		width:90%;
+		max-width:1400px;
+		
 	}
 	
 	div{
 		width:1400px;
 		text-align: left;
 		margin:auto;
+		width:90%;
+		max-width:1400px;
 	}
 </style>
 
@@ -43,7 +48,7 @@ body {
 	<div>
 		<p>Alk Dynamics v3.3</p>
 	</div>
-	<canvas id="unity-canvas" width=1400 height=788 style="width: 1400px; height: 788px; background: #231F20"></canvas>
+	<canvas id="unity-canvas" style="background: #231F20"></canvas>
     <script src="Build/alkdynamics3.2.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {

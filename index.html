@@ -57,6 +57,7 @@
 	<img class="grid-item" onclick="show(3)" src="photoplaces/tn/3.jpg">
 	<img class="grid-item" onclick="show(2)" src="photoplaces/tn/2.jpg" style="object-position: right">
 	<img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
+	<div><img class="grid-item" onclick="show(35)"  src="photoplaces/tn/35.jpg" style="object-position: left"></div>
 </div>
 
 <div id="auto" class="container hide">
@@ -161,7 +162,7 @@
 		
 		const urlString = window.location.search;
 		const urlParams = new URLSearchParams(urlString);
-		var catagory = catagory = urlParams.get('c');
+		var catagory = urlParams.get('c');
 		var photoNum = urlParams.get('p');
 		
 		
@@ -179,7 +180,7 @@
 		}
 		
 
-		const placeOrder = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1];
+		const placeOrder = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1, 35];
 		const autoOrder = [19,18,17,16,15,14,13,12,11,22,10,9,24,21,25,8,7,6,23,5,4,3,2];
 		const nihonOrder = [14,20,15,3,5,6,7,8,9,10,11,12,13,1,16,17,18,19,2,21,22,23,24,25,26,27,28,29,30,31];
 		//console.log(placeOrder.length);
@@ -383,6 +384,8 @@
 		{
 			window.open("https://www.alkchan.com/nihon35/");
 		}
+		
+
 		
 		/*document.addEventListener('keydown', function(event) {
 			if(event.keyCode == 37) {

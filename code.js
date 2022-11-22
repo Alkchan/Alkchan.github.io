@@ -15,7 +15,7 @@
 		
 		if (sessionStorage.getItem("url") == window.location.search)
 		{
-			//console.log("current url " + window.location.search + " matches with stored one, refreshing the page");
+			console.log("current url " + window.location.search + " matches with stored one, refreshing the page");
 			sessionStorage.setItem("url", null);
 			location.reload();
 		}
@@ -220,7 +220,7 @@
 			}
 			
 			setTimeout(function(){
-				//console.log("about to leave page, storing " + window.location.search + " as url");
+				console.log("about to leave page, storing " + window.location.search + " as url");
 				sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
@@ -234,7 +234,7 @@
 
 			
 			setTimeout(function(){
-				//console.log("about to leave page, storing " + window.location.search + " as url");
+				console.log("about to leave page, storing " + window.location.search + " as url");
 				sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
@@ -244,14 +244,14 @@
 		{
 			num = 0;
 			catagory = catName;
-			//console.log("about to leave page, storing " + window.location.search + " as url");
+			console.log("about to leave page, storing " + window.location.search + " as url");
 			sessionStorage.setItem("url", window.location.search);
 			window.location.href = "index.html?c=" + catagory + "&p=" + num;
 		}
 		
 		function home()
 		{
-			//console.log("about to leave page, storing " + window.location.search + " as url");
+			console.log("about to leave page, storing " + window.location.search + " as url");
 			sessionStorage.setItem("url", window.location.search);
 			window.location.href = 'index.html';
 		}

@@ -13,7 +13,7 @@
 			location.reload();
 		}*/
 		
-		if (sessionStorage.getItem("url") == window.location.search)
+		/*if (sessionStorage.getItem("url") == window.location.search)
 		{
 			console.log("current url " + window.location.search + " matches with stored one, refreshing the page");
 			sessionStorage.setItem("url", null);
@@ -23,7 +23,7 @@
 		{
 			console.log("current url does not match stored url" );
 
-		}
+		}*/
 
 
 		
@@ -220,8 +220,8 @@
 			}
 			
 			setTimeout(function(){
-				console.log("about to leave page, storing " + window.location.search + " as url");
-				sessionStorage.setItem("url", window.location.search);
+				//console.log("about to leave page, storing " + window.location.search + " as url");
+				//sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
 		}
@@ -234,8 +234,8 @@
 
 			
 			setTimeout(function(){
-				console.log("about to leave page, storing " + window.location.search + " as url");
-				sessionStorage.setItem("url", window.location.search);
+				//console.log("about to leave page, storing " + window.location.search + " as url");
+				//sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
 		}
@@ -244,15 +244,15 @@
 		{
 			num = 0;
 			catagory = catName;
-			console.log("about to leave page, storing " + window.location.search + " as url");
-			sessionStorage.setItem("url", window.location.search);
+			//console.log("about to leave page, storing " + window.location.search + " as url");
+			//sessionStorage.setItem("url", window.location.search);
 			window.location.href = "index.html?c=" + catagory + "&p=" + num;
 		}
 		
 		function home()
 		{
-			console.log("about to leave page, storing " + window.location.search + " as url");
-			sessionStorage.setItem("url", window.location.search);
+			//console.log("about to leave page, storing " + window.location.search + " as url");
+			//sessionStorage.setItem("url", window.location.search);
 			window.location.href = 'index.html';
 		}
 		

@@ -13,6 +13,20 @@
 			location.reload();
 		}*/
 		
+		if (sessionStorage.getItem("url") == window.location.search)
+		{
+			//console.log("current url " + window.location.search + " matches with stored one, refreshing the page");
+			sessionStorage.setItem("url", null);
+			location.reload();
+		}
+		else
+		{
+			console.log("current url does not match stored url" );
+
+		}
+
+
+		
 		
    
    
@@ -206,7 +220,8 @@
 			}
 			
 			setTimeout(function(){
-				//localStorage.setItem("previousUrl",window.location.search);
+				//console.log("about to leave page, storing " + window.location.search + " as url");
+				sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
 		}
@@ -219,7 +234,8 @@
 
 			
 			setTimeout(function(){
-				//localStorage.setItem("previousUrl",window.location.search);
+				//console.log("about to leave page, storing " + window.location.search + " as url");
+				sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
 		}
@@ -228,13 +244,15 @@
 		{
 			num = 0;
 			catagory = catName;
-			//localStorage.setItem("previousUrl",window.location.search);
+			//console.log("about to leave page, storing " + window.location.search + " as url");
+			sessionStorage.setItem("url", window.location.search);
 			window.location.href = "index.html?c=" + catagory + "&p=" + num;
 		}
 		
 		function home()
 		{
-			//localStorage.setItem("previousUrl",window.location.search);
+			//console.log("about to leave page, storing " + window.location.search + " as url");
+			sessionStorage.setItem("url", window.location.search);
 			window.location.href = 'index.html';
 		}
 		

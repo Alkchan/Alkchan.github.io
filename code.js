@@ -4,16 +4,14 @@
 		var photoNum = urlParams.get('p');
 		
 		
-		window.addEventListener('popstate', function () {
-			alert("popstate");
-		});
 
-		
+
+		/*
 		if (localStorage.getItem("previousUrl") == window.location.search)
 		{
 			localStorage.setItem("previousUrl","blank");
 			location.reload();
-		}
+		}*/
 		
 		
    
@@ -208,7 +206,7 @@
 			}
 			
 			setTimeout(function(){
-				localStorage.setItem("previousUrl",window.location.search);
+				//localStorage.setItem("previousUrl",window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
 		}
@@ -221,7 +219,7 @@
 
 			
 			setTimeout(function(){
-				localStorage.setItem("previousUrl",window.location.search);
+				//localStorage.setItem("previousUrl",window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 200);			
 		}
@@ -230,13 +228,13 @@
 		{
 			num = 0;
 			catagory = catName;
-			localStorage.setItem("previousUrl",window.location.search);
+			//localStorage.setItem("previousUrl",window.location.search);
 			window.location.href = "index.html?c=" + catagory + "&p=" + num;
 		}
 		
 		function home()
 		{
-			localStorage.setItem("previousUrl",window.location.search);
+			//localStorage.setItem("previousUrl",window.location.search);
 			window.location.href = 'index.html';
 		}
 		

@@ -150,7 +150,6 @@
 		  
 			document.getElementById(catagory).style.display = "inline-grid";
 			
-			document.getElementById(catagory).style.opacity = "1"; 
 			
 			setTimeout(function(){
 				//document.getElementById(catagory).classList.remove("hide");

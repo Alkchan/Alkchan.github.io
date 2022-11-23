@@ -3,7 +3,9 @@
 		var catagory = urlParams.get('c');
 		var photoNum = urlParams.get('p');
 		
-
+window.addEventListener('load', function () {
+			console.log("Page has fully loaded");
+		})
 		
 
 		

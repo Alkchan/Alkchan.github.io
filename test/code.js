@@ -118,12 +118,11 @@
 		  
 			document.getElementById(catagory).style.display = "inline-grid";
 
-			document.getElementById(catagory).style.opacity = "100%";
+
 				
 			if (catagory == "nihon")
 			{
 				document.getElementById("nihon35link").style.display = "block";
-				document.getElementById("nihon35link").style.opacity = "100%";	
 			}
 			
 		
@@ -161,11 +160,11 @@
 
 		function show(num, additional)
 		{
-			document.getElementById(catagory).style.opacity = "0%";
+			
 			
 			if (catagory == "nihon")
 			{
-				document.getElementById("nihon35link").style.opacity = "0%";
+			
 				document.getElementById("nihon35link").style.display = "none";
 			}
 			
@@ -179,8 +178,7 @@
 		function showtn() 
 		{
 			num = 0;
-			
-			document.getElementById("imgCont").style.opacity = "0%";
+		
 
 			
 			setTimeout(function(){

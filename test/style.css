@@ -190,7 +190,7 @@ display:inline;
   margin:20px auto 0px;
   padding:8px;
   box-shadow: 1px 1px #ddd;
-  opacity:0%;
+
   transition:opacity 0.2s;
   font-size:80%;
   cursor:pointer;
@@ -217,22 +217,22 @@ display:inline;
 
 #places{
   display: none;
-  opacity:0%;
+
 }
 
 #nihon{
   display: none;
-  opacity:0%;
+
 }
 
 #auto{
   display: none;
-  opacity:0%;
+
 }
 
 #contact{
   display:none;
-  opacity:0%;
+
 }
 
 .grid-item{

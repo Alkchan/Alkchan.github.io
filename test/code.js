@@ -1,12 +1,13 @@
+		window.addEventListener('load', function () {
+			console.log("Page has fully loaded");
+		})
+
 		const urlString = window.location.search;
 		const urlParams = new URLSearchParams(urlString);
 		var catagory = urlParams.get('c');
 		var photoNum = urlParams.get('p');
 		
-window.addEventListener('load', function () {
-			console.log("Page has fully loaded");
-		})
-		
+
 
 		
 		// set defaults if no urlParams exist

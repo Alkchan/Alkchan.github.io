@@ -105,7 +105,7 @@
 			});*/
 			
 
-			
+			console.log("showing large image");
 
 		}
 		else
@@ -144,7 +144,7 @@
 			url = "photo" + catagory +"/";
 			
 
-			
+			console.log("showing thumbnails");
 			
 		}
 		
@@ -163,7 +163,7 @@
 
 		function show(num, additional)
 		{
-			
+			console.log("thumbnail clicked");
 			
 			if (catagory == "nihon")
 			{
@@ -175,6 +175,7 @@
 				//console.log("about to leave page, storing " + window.location.search + " as url");
 				//sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
+				console.log("show image");
 			}, 20);			
 		}
 
@@ -182,12 +183,13 @@
 		{
 			num = 0;
 		
-
+			console.log("image  clicked");
 			
 			setTimeout(function(){
 				//console.log("about to leave page, storing " + window.location.search + " as url");
 				//sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
+				console.log("show thumbnails");
 			}, 20);			
 		}
 
@@ -198,6 +200,7 @@
 			//console.log("about to leave page, storing " + window.location.search + " as url");
 			//sessionStorage.setItem("url", window.location.search);
 			window.location.href = "index.html?c=" + catagory + "&p=" + num;
+			console.log("show catagory");
 		}
 		
 		function home()

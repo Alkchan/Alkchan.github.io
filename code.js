@@ -25,15 +25,16 @@
 
 		}*/
 
-		window.addEventListener('load', function () {
+		/*window.addEventListener('load', function () {
 			console.log("Page has fully loaded");
-		})
+		})*/
+		
+		document.onload = function() {
+		  console.log("Page has fully loaded");
+		};
 		
    
-   
-		
-		
-		//console.log(window.history.length);
+  
 		
 
 		
@@ -119,7 +120,7 @@
 			 
 			document.getElementById('bigimg').addEventListener("load", function () { 
 				setTimeout(function(){
-					document.getElementById("imgCont").style.opacity = "100%";
+					document.getElementById("imgCont").style.opacity = "1";
 					//document.getElementById("loading").style.display = "none";	
 					//document.getElementById("loading").style.opacity = "0%";
 				}, 50);
@@ -154,12 +155,12 @@
 			setTimeout(function(){
 				//document.getElementById(catagory).classList.remove("hide");
 				//document.getElementById(catagory).classList.add("show");
-				document.getElementById(catagory).style.opacity = "100%";
+				document.getElementById(catagory).style.opacity = "1";
 				
 				if (catagory == "nihon")
 				{
 					document.getElementById("nihon35link").style.display = "block";
-					document.getElementById("nihon35link").style.opacity = "100%";
+					document.getElementById("nihon35link").style.opacity = "1";
 					
 					
 				}
@@ -208,12 +209,12 @@
 
 		function show(num, additional)
 		{
-			document.getElementById(catagory).style.opacity = "0%";
+			document.getElementById(catagory).style.opacity = "0";
 
 			
 			if (catagory == "nihon")
 			{
-				document.getElementById("nihon35link").style.opacity = "0%";
+				document.getElementById("nihon35link").style.opacity = "0";
 				
 				setTimeout(function(){
 					document.getElementById("nihon35link").style.display = "none";
@@ -231,7 +232,7 @@
 		{
 			num = 0;
 			
-			document.getElementById("imgCont").style.opacity = "0%";
+			document.getElementById("imgCont").style.opacity = "0";
 
 			
 			setTimeout(function(){

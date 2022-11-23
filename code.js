@@ -25,8 +25,9 @@
 
 		}*/
 
-
-		
+		window.addEventListener('load', function () {
+			console.log("Page has fully loaded");
+		})
 		
    
    

@@ -2,9 +2,6 @@
 		const urlParams = new URLSearchParams(urlString);
 		var catagory = urlParams.get('c');
 
-		
-		
-		
 
 		
 		// set defaults if no urlParams exist
@@ -16,19 +13,19 @@
 		
 		if (catagory == 1)
 		{
-			document.getElementById("first").classList.toggle("displayNone");
 			
 			setTimeout(function(){
 				document.getElementById("first").classList.toggle("opacityNone");
+				document.getElementById("first").classList.toggle("displayNone");
 			}, 20);	
 		}
 		
 		if (catagory == 2)
 		{
-			document.getElementById("second").classList.toggle("displayNone");
 			
 			setTimeout(function(){
 				document.getElementById("second").classList.toggle("opacityNone");
+				document.getElementById("second").classList.toggle("displayNone");
 			}, 20);	
 			
 		}

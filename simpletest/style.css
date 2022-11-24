@@ -3,7 +3,7 @@ html { -webkit-text-size-adjust:none; }
 *{
   box-sizing: border-box;
   opacity:1;
-  transition:opacity 0.2s;
+  transition:opacity 1s;
 }
 
 #first{

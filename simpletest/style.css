@@ -2,6 +2,7 @@ html { -webkit-text-size-adjust:none; }
 
 *{
   box-sizing: border-box;
+  opacity:1;
   transition:opacity 0.2s;
 }
 
@@ -20,3 +21,9 @@ background-color:red;
 .displayNone{
 	display:none;
 }
+
+.opacityNone{
+
+	opacity:0;
+}
+

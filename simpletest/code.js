@@ -16,12 +16,17 @@
 		
 		if (catagory == 1)
 		{
+			setTimeout(function(){
+				document.getElementById("first").classList.toggle("opacityNone");
+			}, 20);	
 		}
 		
 		if (catagory == 2)
 		{
-			document.getElementById("first").classList.toggle("displayNone");
-			document.getElementById("second").classList.toggle("displayNone");
+			setTimeout(function(){
+				document.getElementById("second").classList.toggle("opacityNone");
+			}, 20);	
+			
 		}
 
 

@@ -39,7 +39,7 @@
 			
 			setTimeout(function(){
 				window.location.href = "index.html?c=2";
-			}, 500);	
+			}, 600);	
 			
 			
 		}
@@ -50,7 +50,7 @@
 			
 			setTimeout(function(){
 				window.location.href = "index.html?c=1";
-			}, 500);	
+			}, 600);	
 		}
 
 			

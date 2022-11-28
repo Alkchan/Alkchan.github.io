@@ -1,3 +1,4 @@
+
 		const urlString = window.location.search;
 		const urlParams = new URLSearchParams(urlString);
 		var catagory = urlParams.get('c');
@@ -28,14 +29,6 @@
 		/*window.addEventListener('load', function () {
 			console.log("Page has fully loaded");
 		})*/
-		
-		document.onload = function() {
-		  console.log("Page has fully loaded");
-		};
-		
-   
-  
-		
 
 		
 		// set defaults if no urlParams exist
@@ -48,7 +41,6 @@
 		{
 			photoNum = 0;
 		}
-		
 
 		const placeOrder = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1, 35];
 		const autoOrder = [19,18,17,16,15,14,13,12,11,22,10,9,24,21,25,8,7,6,23,5,4,3,2];
@@ -90,6 +82,12 @@
 			document.querySelector("li:nth-child(5) > .triangleUp").style.display = "block";
 		}
 		
+
+	window.addEventListener("load", pageFullyLoaded, false);
+		
+	function pageFullyLoaded(e)
+	{
+
 		url = "photo" + catagory +"/";
 		
 		if (photoNum > 0)
@@ -129,9 +127,6 @@
 				alert(isLoaded);
 			});*/
 			
-
-			
-
 		}
 		else
 		{
@@ -174,11 +169,9 @@
 			//document.getElementById("imgCont").classList = "hide"
 			document.getElementById('imgCont').style.display = "none";
 			url = "photo" + catagory +"/";
-			
-
-			
-			
 		}
+	}
+	
 		
 		
 		/*document.addEventListener('keydown', function(event) {
@@ -257,3 +250,5 @@
 				document.getElementById('bigimg').src = url + number++ + ".jpg"
 			}
 		});*/
+		
+	

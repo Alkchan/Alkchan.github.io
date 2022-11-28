@@ -278,12 +278,10 @@ display:inline;
   left:35px;
 }
 
-#imgCont{
-	//display:block;
+.imgCont{
 	margin:0px auto;
 	position:relative;
 	width:fit-content;
-	//transition:opacity 0.2s;
 }
 
 

@@ -154,12 +154,12 @@
 			setTimeout(function(){
 				//document.getElementById(catagory).classList.remove("hide");
 				//document.getElementById(catagory).classList.add("show");
-				document.getElementById(catagory).style.opacity = "1";
+				//document.getElementById(catagory).style.opacity = "1";
 				
 				if (catagory == "nihon")
 				{
 					document.getElementById("nihon35link").style.display = "block";
-					document.getElementById("nihon35link").style.opacity = "1";
+					//document.getElementById("nihon35link").style.opacity = "1";
 					
 					
 				}

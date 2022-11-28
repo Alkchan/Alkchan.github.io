@@ -119,10 +119,10 @@
 			
 			if (catagory == "nihon")
 			{
-				document.getElementById("nihon35link").style.opacity = "0";
 				
 				setTimeout(function(){
-					document.getElementById("nihon35link").style.display = "none";
+
+					document.getElementById("nihon35link").classList.toggle("displayNone");
 				}, 200);
 			}
 			
@@ -135,7 +135,7 @@
 		{
 			num = 0;
 			
-			document.getElementById("imgCont").style.opacity = "0";
+			document.getElementById("imgCont").classList.toggle("displayNone");
 
 			
 			setTimeout(function(){

@@ -15,10 +15,11 @@
 		if (catagory == 1)
 		{
 			document.getElementById("first").classList.toggle("displayNone");
+			document.getElementById("first").classList.toggle("opacityNone");
 			console.log("toggle displayNone class");
 			
 			setTimeout(function(){
-				document.getElementById("first").classList.toggle("opacityNone");
+				
 				console.log("toggle opacityNone class (20ms delay)");
 			}, 20);	
 		}
@@ -26,10 +27,11 @@
 		if (catagory == 2)
 		{
 			document.getElementById("second").classList.toggle("displayNone");
+			document.getElementById("second").classList.toggle("opacityNone");
 			console.log("toggle displayNone class");
 			
 			setTimeout(function(){
-				document.getElementById("second").classList.toggle("opacityNone");
+				
 				console.log("toggle opacityNone class (20ms delay)");
 			}, 20);	
 			

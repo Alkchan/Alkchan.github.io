@@ -114,15 +114,11 @@
 			
 			//show larger photo
 			
-			document.getElementById('bigimg').src = url + photoNum + ".jpg";	
-			//document.getElementById("loading").style.display = "block";		
-			//document.getElementById("loading").style.opacity = "100%";				
+			document.getElementById('bigimg').src = url + photoNum + ".jpg";					
 			 
 			document.getElementById('bigimg').addEventListener("load", function () { 
 				setTimeout(function(){
 					document.getElementById("imgCont").style.opacity = "1";
-					//document.getElementById("loading").style.display = "none";	
-					//document.getElementById("loading").style.opacity = "0%";
 				}, 50);
 			} );
 			
@@ -154,12 +150,12 @@
 			setTimeout(function(){
 				//document.getElementById(catagory).classList.remove("hide");
 				//document.getElementById(catagory).classList.add("show");
-				//document.getElementById(catagory).style.opacity = "1";
+				document.getElementById(catagory).style.opacity = "1";
 				
 				if (catagory == "nihon")
 				{
 					document.getElementById("nihon35link").style.display = "block";
-					//document.getElementById("nihon35link").style.opacity = "1";
+					document.getElementById("nihon35link").style.opacity = "1";
 					
 					
 				}
@@ -182,17 +178,6 @@
 
 			
 			
-		}
-		
-		function test()
-		{
-			var x = document.getElementsByClassName("container");
-			var i;
-			for (i = 0; i < x.length; i++)
-			{
-			  x[i].style.display = 'none';
-			}
-			document.getElementById("contact").style.display = "none";
 		}
 		
 		

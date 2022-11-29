@@ -90,7 +90,7 @@
 		
 		setTimeout(function(){
 				document.getElementById("lds-ring").classList.toggle("opacityNone");
-			}, 10);
+			}, 20);
 		 
 		
 		//check to see if selected image has loaded
@@ -105,7 +105,7 @@
 		
 			setTimeout(function(){
 				document.getElementById("imgCont").classList.toggle("opacityNone");
-			}, 10);
+			}, 20);
 			
 		} );
 	}

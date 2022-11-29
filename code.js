@@ -82,16 +82,16 @@
 			document.getElementById("imgNum").innerHTML = textNum;
 		}
 		
-		//change url of requested photo
-		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
-
 		//show blank loading image
 		document.getElementById("temploader").classList.toggle("displayNone");
 		
 		//show spinner
 		setTimeout(function(){
 				document.getElementById("lds-ring").classList.toggle("opacityNone");
-			}, 50);
+		}, 50);
+		
+		//change url of requested photo
+		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
 		 
 		//check to see if selected image has loaded
 		document.getElementById('bigimg').addEventListener("load", function ()
@@ -111,7 +111,6 @@
 	}
 	else
 	{
-
 		document.getElementById(catagory).classList.toggle("displayNone");
 		
 		setTimeout(function(){

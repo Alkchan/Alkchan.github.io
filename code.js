@@ -205,7 +205,7 @@
 
 			setTimeout(function(){
 				document.getElementById(catagory).style.opacity = "1";
-			}, 300);	
+			}, 400);	
 			
 			
 		}
@@ -216,17 +216,13 @@
 			
 			document.getElementById("imgCont").style.opacity = "0";
 
-			
 			setTimeout(function(){
-				//console.log("about to leave page, storing " + window.location.search + " as url");
-				//sessionStorage.setItem("url", window.location.search);
-				window.location.href = "index.html?c=" + catagory + "&p=" + num;
-				
+				window.location.href = "index.html?c=" + catagory + "&p=" + num;		
 			}, 200);
 
 			setTimeout(function(){
 				document.getElementById("imgCont").style.opacity = "1";
-			}, 300);	
+			}, 400);	
 		}
 
 		function showCatagory(catName)

@@ -5,8 +5,6 @@
 		var photoNum = urlParams.get('p');
 		
 	
-
-		
 		// set defaults if no urlParams exist
 		if (catagory == null)
 		{
@@ -80,27 +78,39 @@
 			//show larger photo
 			document.getElementById('bigimg').src = url + photoNum + ".jpg";					
 			 
-			document.getElementById('bigimg').addEventListener("load", function () { 
+			document.getElementById('bigimg').addEventListener("load", function ()
+			{ 
+			
+				document.getElementById("imgCont").classList.toggle("displayNone");
+				
+				
 				setTimeout(function(){
-					document.getElementById("imgCont").classList.toggle("displayNone");
-				}, 50);
+					document.getElementById("imgCont").classList.toggle("opacityNone");
+				}, 20);
+				
 			} );
 			
-
 			
 		}
 		else
 		{
+			
 			document.getElementById(catagory).classList.toggle("displayNone");
 			
 			setTimeout(function(){
-				
-				if (catagory == "nihon")
-				{
-					document.getElementById("nihon35link").classList.toggle("displayNone");
-				}
+					document.getElementById(catagory).classList.toggle("opacityNone");
+					
+					if (catagory == "nihon")
+					{
+						document.getElementById("nihon35link").classList.toggle("displayNone");
+						document.getElementById("nihon35link").classList.toggle("opacityNone");
+					}
+			}, 20);
 			
-			}, 50);
+				
+			
+			
+	
 			
 
 
@@ -115,32 +125,29 @@
 		function show(num, additional)
 		{
 
-
-			
 			if (catagory == "nihon")
 			{
 				
 				setTimeout(function(){
 
-					document.getElementById("nihon35link").classList.toggle("displayNone");
-				}, 200);
+					document.getElementById("nihon35link").classList.toggle("opacityNone");
+				}, 300);
 			}
 			
 			setTimeout(function(){
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
-			}, 200);			
+			}, 300);			
 		}
 
 		function showtn() 
 		{
 			num = 0;
 			
-			document.getElementById("imgCont").classList.toggle("displayNone");
+			document.getElementById("imgCont").classList.toggle("opacityNone");
 
-			
 			setTimeout(function(){
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
-			}, 200);			
+			}, 300);			
 		}
 
 		function showCatagory(catName)

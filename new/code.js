@@ -124,17 +124,19 @@
 
 		function show(num, additional)
 		{
-
+			document.getElementById(catagory).classList.toggle("opacityNone");
+			
 			if (catagory == "nihon")
 			{
 				
 				setTimeout(function(){
-
 					document.getElementById("nihon35link").classList.toggle("opacityNone");
 				}, 300);
 			}
 			
 			setTimeout(function(){
+				document.getElementById("nihon35link").classList.toggle("displayNone");
+				document.getElementById(catagory).classList.toggle("displayNone");
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 300);			
 		}
@@ -146,6 +148,7 @@
 			document.getElementById("imgCont").classList.toggle("opacityNone");
 
 			setTimeout(function(){
+				document.getElementById("imgCont").classList.toggle("displayNone");
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 300);			
 		}

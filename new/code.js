@@ -83,7 +83,6 @@
 			
 				document.getElementById("imgCont").classList.toggle("displayNone");
 				
-				
 				setTimeout(function(){
 					document.getElementById("imgCont").classList.toggle("opacityNone");
 				}, 20);
@@ -107,14 +106,7 @@
 					}
 			}, 20);
 			
-				
-			
-			
-	
-			
 
-
-			
 			url = "photo" + catagory +"/";
 		}
 	}
@@ -127,16 +119,16 @@
 			document.getElementById(catagory).classList.toggle("opacityNone");
 			
 			if (catagory == "nihon")
-			{
-				
-				setTimeout(function(){
-					document.getElementById("nihon35link").classList.toggle("opacityNone");
-				}, 300);
+			{	
+				document.getElementById("nihon35link").classList.toggle("opacityNone");
 			}
 			
 			setTimeout(function(){
 				document.getElementById("nihon35link").classList.toggle("displayNone");
 				document.getElementById(catagory).classList.toggle("displayNone");
+			}, 250);	
+			
+			setTimeout(function(){
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 300);			
 		}
@@ -149,6 +141,9 @@
 
 			setTimeout(function(){
 				document.getElementById("imgCont").classList.toggle("displayNone");
+			}, 250);	
+
+			setTimeout(function(){
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
 			}, 300);			
 		}

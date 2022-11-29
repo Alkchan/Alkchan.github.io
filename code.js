@@ -187,7 +187,6 @@
 		function show(num, additional)
 		{
 			document.getElementById(catagory).style.opacity = "0";
-
 			
 			if (catagory == "nihon")
 			{
@@ -216,6 +215,7 @@
 				//console.log("about to leave page, storing " + window.location.search + " as url");
 				//sessionStorage.setItem("url", window.location.search);
 				window.location.href = "index.html?c=" + catagory + "&p=" + num;
+				document.getElementById("imgCont").style.opacity = "1";
 			}, 200);			
 		}
 

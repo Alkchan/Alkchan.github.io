@@ -82,17 +82,15 @@
 			document.getElementById("imgNum").innerHTML = textNum;
 		}
 		
-		//show larger photo
+		//change url of requested photo
 		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
 
-		//show loading
+		//show blank loading image
 		document.getElementById("temploader").classList.toggle("displayNone");
 		
-		setTimeout(function(){
-				document.getElementById("lds-ring").classList.toggle("opacityNone");
-			}, 20);
+		//show spinner
+		document.getElementById("lds-ring").classList.toggle("opacityNone");
 		 
-		
 		//check to see if selected image has loaded
 		document.getElementById('bigimg').addEventListener("load", function ()
 		{ 

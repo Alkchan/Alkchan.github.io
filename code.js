@@ -86,26 +86,26 @@
 		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
 
 		//show loading
-		document.getElementById("loadingImgCont").classList.toggle("displayNone");
+		document.getElementById("temploader").classList.toggle("displayNone");
 		
 		setTimeout(function(){
-				document.getElementById("loadingImgCont").classList.toggle("opacityNone");
-			}, 20);
+				document.getElementById("lds-ring").classList.toggle("opacityNone");
+			}, 10);
 		 
 		
 		//check to see if selected image has loaded
 		document.getElementById('bigimg').addEventListener("load", function ()
 		{ 
 			//hide loading
-			document.getElementById("loadingImgCont").classList.toggle("displayNone");
-			document.getElementById("loadingImgCont").classList.toggle("opacityNone");
+			document.getElementById("temploader").classList.toggle("displayNone");
+			document.getElementById("lds-ring").classList.toggle("opacityNone");
 			
 			//show loaded image
 			document.getElementById("imgCont").classList.toggle("displayNone");
 		
 			setTimeout(function(){
 				document.getElementById("imgCont").classList.toggle("opacityNone");
-			}, 20);
+			}, 10);
 			
 		} );
 	}

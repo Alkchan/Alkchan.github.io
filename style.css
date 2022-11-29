@@ -255,20 +255,6 @@ a:hover{
 	width:fit-content;
 }
 
-#loadingImgCont{
-	margin:0px auto;
-	position:relative;
-	width:fit-content;
-}
-
-#loadingImgCont > img{
-	padding:5px 5px 60px 5px;
-	background-color:#F5F5F5;
-	cursor: pointer;
-	margin:0px auto;
-	border-radius:5px;
-	box-shadow: 1px 1px #ddd;
-}
 
 #imgNum{
 	position: absolute;

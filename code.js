@@ -89,7 +89,9 @@
 		document.getElementById("temploader").classList.toggle("displayNone");
 		
 		//show spinner
-		document.getElementById("lds-ring").classList.toggle("opacityNone");
+		setTimeout(function(){
+				document.getElementById("lds-ring").classList.toggle("opacityNone");
+			}, 50);
 		 
 		//check to see if selected image has loaded
 		document.getElementById('bigimg').addEventListener("load", function ()

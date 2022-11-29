@@ -205,7 +205,7 @@
 
 			setTimeout(function(){
 				document.getElementById(catagory).style.opacity = "1";
-			}, 220);	
+			}, 300);	
 			
 			
 		}
@@ -226,7 +226,7 @@
 
 			setTimeout(function(){
 				document.getElementById("imgCont").style.opacity = "1";
-			}, 220);	
+			}, 300);	
 		}
 
 		function showCatagory(catName)

@@ -83,10 +83,24 @@
 		}
 		
 		//show larger photo
-		document.getElementById('bigimg').src = url + photoNum + ".jpg";					
+		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
+
+		//show loading
+		document.getElementById("loadingImgCont").classList.toggle("displayNone");
+		
+		setTimeout(function(){
+				document.getElementById("loadingImgCont").classList.toggle("opacityNone");
+			}, 20);
 		 
+		
+		//check to see if selected image has loaded
 		document.getElementById('bigimg').addEventListener("load", function ()
 		{ 
+			//hide loading
+			document.getElementById("loadingImgCont").classList.toggle("displayNone");
+			document.getElementById("loadingImgCont").classList.toggle("opacityNone");
+			
+			//show loaded image
 			document.getElementById("imgCont").classList.toggle("displayNone");
 		
 			setTimeout(function(){

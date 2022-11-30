@@ -294,7 +294,7 @@ a:hover{
     margin-left: -40px;
     margin-top:-40px;
     z-index: 2;
-	transition:position 0.3s;
+	transition:top 0.3s;
 }
 .lds-ring div {
   box-sizing: border-box;

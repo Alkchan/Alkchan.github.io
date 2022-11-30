@@ -289,12 +289,10 @@ a:hover{
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-left: -40px;
-    margin-top:-40px;
-    z-index: 2;
-	transition:top 0.3s;
+    margin-top: -40px;
 }
 .lds-ring div {
   box-sizing: border-box;
@@ -306,7 +304,7 @@ a:hover{
   border: 8px solid #fff;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+  border-color: #d9d9d9 transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
@@ -337,18 +335,18 @@ a:hover{
 
 
 @media screen and (max-width: 1060px) {
-  .container
-  {
-     width:865px;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-  
-  #menu
-  {
-     width:865px;
-  }
-  
-  #bigimg{
+	.container
+	{
+	 width:865px;
+	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	#menu
+	{
+	 width:865px;
+	}
+
+	#bigimg{
 		max-width:865px;
 	}
 }

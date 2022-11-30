@@ -94,7 +94,7 @@
 		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
 		 
 		//check to see if selected image has loaded
-		document.getElementById('bigimg').addEventListener("load", function ()
+		/*document.getElementById('bigimg').addEventListener("load", function ()
 		{ 
 			//hide loading
 			document.getElementById("temploader").classList.toggle("displayNone");
@@ -107,7 +107,23 @@
 				document.getElementById("imgCont").classList.toggle("opacityNone");
 			}, 20);
 			
-		} );
+		} );*/
+		
+		window.addEventListener("load", event => {
+			var image = document.getElementById('bigimg');
+			var isLoaded = image.complete && image.naturalHeight !== 0;
+			
+			//hide loading
+			document.getElementById("temploader").classList.toggle("displayNone");
+			document.getElementById("lds-ring").classList.toggle("opacityNone");
+			
+			//show loaded image
+			document.getElementById("imgCont").classList.toggle("displayNone");
+		
+			setTimeout(function(){
+				document.getElementById("imgCont").classList.toggle("opacityNone");
+			}, 20);
+		});
 	}
 	else
 	{

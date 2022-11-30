@@ -83,21 +83,19 @@
 		}
 		
 		//show blank loading image
-		document.getElementById("temploader").classList.toggle("displayNone");
+		//document.getElementById("temploader").classList.toggle("displayNone");
 		
 		//show spinner
-		setTimeout(function(){
-				document.getElementById("lds-ring").classList.toggle("opacityNone");
-		}, 50);
+		document.getElementById("lds-ring").classList.toggle("opacityNone");
 		
 		//change url of requested photo
 		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
 		 
 		//check to see if selected image has loaded
-		/*document.getElementById('bigimg').addEventListener("load", function ()
+		document.getElementById('bigimg').addEventListener("load", function ()
 		{ 
 			//hide loading
-			document.getElementById("temploader").classList.toggle("displayNone");
+			//document.getElementById("temploader").classList.toggle("displayNone");
 			document.getElementById("lds-ring").classList.toggle("opacityNone");
 			
 			//show loaded image
@@ -107,23 +105,7 @@
 				document.getElementById("imgCont").classList.toggle("opacityNone");
 			}, 20);
 			
-		} );*/
-		
-		window.addEventListener("load", event => {
-			var image = document.getElementById('bigimg');
-			var isLoaded = image.complete && image.naturalHeight !== 0;
-			
-			//hide loading
-			document.getElementById("temploader").classList.toggle("displayNone");
-			document.getElementById("lds-ring").classList.toggle("opacityNone");
-			
-			//show loaded image
-			document.getElementById("imgCont").classList.toggle("displayNone");
-		
-			setTimeout(function(){
-				document.getElementById("imgCont").classList.toggle("opacityNone");
-			}, 20);
-		});
+		} );
 	}
 	else
 	{

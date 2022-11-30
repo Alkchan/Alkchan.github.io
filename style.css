@@ -249,7 +249,7 @@ a:hover{
 	left:35px;
 }
 
-#imgCont{
+.imgCont{
 	margin:0px auto;
 	position:relative;
 	width:fit-content;
@@ -292,7 +292,7 @@ a:hover{
     top: 50%;
     left: 50%;
     margin-left: -40px;
-    margin-top:350px;
+    margin-top:-40px;
     z-index: 2;
 }
 .lds-ring div {

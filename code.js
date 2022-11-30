@@ -82,6 +82,7 @@
 			document.getElementById("imgNum").innerHTML = textNum;
 		}
 	
+		document.getElementById("imgCont").classList.toggle("displayNone");
 		
 		//show spinner
 		document.getElementById("lds-ring").classList.toggle("opacityNone");
@@ -96,10 +97,11 @@
 			document.getElementById("lds-ring").classList.toggle("opacityNone");
 			
 			//show loaded image
-			document.getElementById("imgCont").classList.toggle("displayNone");
+			document.getElementById("bigimg").classList.toggle("opacityNone");
+			document.getElementById("imgNum").classList.toggle("opacityNone");
 		
 			setTimeout(function(){
-				document.getElementById("imgCont").classList.toggle("opacityNone");
+				//document.getElementById("imgCont").classList.toggle("opacityNone");
 			}, 20);
 			
 		} );

@@ -84,6 +84,8 @@
 	
 		document.getElementById("imgCont").classList.toggle("displayNone");
 		
+		document.getElementById('loader').classList.toggle("displayNone");
+		
 		//show spinner
 		document.getElementById("lds-ring").classList.toggle("opacityNone");
 		
@@ -95,6 +97,7 @@
 		{ 
 			//hide loading
 			document.getElementById("lds-ring").classList.toggle("opacityNone");
+			document.getElementById('loader').classList.toggle("displayNone");
 			
 			//show loaded image
 			document.getElementById("bigimg").classList.toggle("opacityNone");

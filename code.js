@@ -81,9 +81,7 @@
 		{
 			document.getElementById("imgNum").innerHTML = textNum;
 		}
-		
-		//show blank loading image
-		//document.getElementById("temploader").classList.toggle("displayNone");
+	
 		
 		//show spinner
 		document.getElementById("lds-ring").classList.toggle("opacityNone");
@@ -95,7 +93,6 @@
 		document.getElementById('bigimg').addEventListener("load", function ()
 		{ 
 			//hide loading
-			//document.getElementById("temploader").classList.toggle("displayNone");
 			document.getElementById("lds-ring").classList.toggle("opacityNone");
 			
 			//show loaded image

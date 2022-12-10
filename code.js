@@ -20,6 +20,7 @@
 	const urlParams = new URLSearchParams(urlString);
 	var catagory = urlParams.get('c');
 	var photoNum = urlParams.get('p');
+	var photoToggle = urlParams.get('t');
 	var url = "photoplaces/";
 		
 	// set defaults if no urlParams exist
@@ -33,7 +34,7 @@
 		photoNum = 0;
 	}
 
-	const placeOrder = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1, 35];
+	const placeOrder = [31, 27, 26, 25, 23, 22, 21, 32, 20, 19, 18, 28, 17, 30, 16, 15, 14, 13, 11, 10, 34, 9, 8, 7, 33, 6, 4, 3, 2, 1, 35, 37];
 	const autoOrder = [19,18,17,16,26,14,13,12,11,22,10,9,24,21,25,8,7,6,23,5,4,3,2,15];
 	const nihonOrder = [14,20,15,3,5,6,7,8,9,10,11,12,13,1,16,17,18,19,2,21,22,23,24,25,26,27,28,29,30,31];
 
@@ -89,6 +90,7 @@
 		
 		//change url of requested photo
 		document.getElementById('bigimg').src = url + photoNum + ".jpg";	
+		
 		 
 		//check to see if selected image has loaded
 		document.getElementById('bigimg').addEventListener("load", function ()
@@ -105,6 +107,19 @@
 			}, 20);
 			
 		} );
+		
+		if (photoToggle == 1)
+		{
+			document.querySelector(".checkContainer").classList.toggle("displayNone");
+			document.getElementById('bigimg2').src = url + photoNum + "b.jpg";	
+			document.getElementById('bigimg2').classList.toggle("displayNone");	
+			document.getElementById('check').checked = false;
+		}
+
+		
+
+		
+		
 	}
 	else
 	{
@@ -125,14 +140,17 @@
 	}
 	
 	//functions
-	function show(num, additional)
+	function show(num, toggle)
 	{
-		window.location.href = "index.html?c=" + catagory + "&p=" + num;
+		window.location.href = "index.html?c=" + catagory + "&p=" + num + "&t=" + toggle;
 	}
 
 	function showtn() 
 	{
 		num = 0;
+		
+		document.getElementById('check').checked = false;
+		ticked();
 		
 		window.location.href = "index.html?c=" + catagory + "&p=" + num;
 	}
@@ -142,7 +160,12 @@
 		num = 0;
 		catagory = catName;
 
+		document.getElementById('check').checked = false;
+		ticked();
+
 		window.location.href = "index.html?c=" + catagory + "&p=" + num;
+		
+		
 	}
 		
 	function home()
@@ -154,7 +177,22 @@
 	{
 		window.open("https://www.alkchan.com/nihon35/");
 	}
-		
+	
+	
+	document.getElementById("check").onclick = function() { ticked() };
+
+	function ticked() {
+		//document.querySelector("div > img:first-child").classList.toggle("moveToLeft");
+		document.getElementById("bigimg").classList.toggle("marginLeft-100")
+		document.getElementById("bigimg2").classList.toggle("left")
+	}
+	
+	document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 37) {
+        //alert('Left was pressed');
+		document.getElementById('check').checked = false;
+    }
+});
 
 
 		

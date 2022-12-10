@@ -2,7 +2,10 @@ html { -webkit-text-size-adjust:none; }
 
 *{
   box-sizing: border-box;
-  transition:opacity 0.3s;
+  transition: opacity 0.3s;
+  transition: left 0.3s;
+  transition: margin 0.3s;
+  
 }
 
 p{
@@ -233,13 +236,19 @@ a:hover{
 	border-width: 2px;
 }
 
-#bigimg{
-	padding:5px 5px 60px 5px;
-	background-color:#F5F5F5;
+.bigimg{
 	cursor: pointer;
-	margin:0px auto;
-	border-radius:5px;
-	box-shadow: 1px 1px #ddd;
+	margin-bottom:55px;
+}
+
+.bigimg2{
+	position:absolute;
+	transition: left 0.3s;
+	left:100%;
+}
+
+.left{
+	left:0%;
 }
 
 
@@ -253,13 +262,29 @@ a:hover{
 	margin:0px auto;
 	position:relative;
 	width:fit-content;
+	border-width:5px 5px 5px 5px;
+	border-style:solid;
+	border-color:#F5F5F5;;
+	background-color:#F5F5F5;
+	border-radius:5px;
+	box-shadow: 1px 1px #ddd;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+.marginLeft-100{
+  margin-left:-200%;
+}
+
+.left0{
+  left:0%;
 }
 
 
 #imgNum{
 	position: absolute;
     display: block;
-    bottom: 2px;
+    bottom: -2px;
     text-align: left;
     margin: 0px;
     font-size: 300%;
@@ -333,6 +358,55 @@ a:hover{
 }
 
 
+  /* The container */
+.checkContainer {
+	position: absolute;
+	cursor: pointer;
+	height:80px;
+	right: 64px;
+	bottom: -42px;
+}
+/* Hide the browser's default checkbox */
+.checkContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 45px;
+  background-color: #eee;
+  border-radius:15px;
+  background-color: #aaa;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-color:white;
+  border-radius:10px;
+  transition:left 0.3s;
+}
+/* When the checkbox is checked, add a blue background */
+.checkContainer input:checked ~ .checkmark {
+  //background-color: darkred;
+}
+/* Style the checkmark/indicator */
+.checkContainer input:checked ~ .checkmark:after {
+  left: 22px;
+}
+
+
 
 @media screen and (max-width: 1060px) {
 	.container
@@ -346,13 +420,13 @@ a:hover{
 	 width:865px;
 	}
 
-	#bigimg{
+	.bigimg{
 		max-width:865px;
 	}
 }
 
 @media screen and (max-width: 1024px) {
-	#bigimg{
+	.bigimg{
 		max-width:865px;
 	}
 }
@@ -367,7 +441,7 @@ a:hover{
   {
      width:695px;
   }
-	#bigimg{
+	.bigimg{
 		max-width:695px;
 	}
 }
@@ -386,7 +460,7 @@ a:hover{
 	li{
 		margin: 0px 8px 0px 8px;
 	}
-	#bigimg{
+	.bigimg{
 		max-width:525px;
 	}
 }
@@ -415,7 +489,7 @@ a:hover{
 		margin: 0px auto 20px;
 		
 	}
-	#bigimg{
+	.bigimg{
 		max-width:355px;
 	}
 	.contact2{

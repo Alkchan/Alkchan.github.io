@@ -74,13 +74,24 @@
 		
 	if (photoNum > 0)
 	{
+		if(catagory == 'auto')
+		{
+			textNum += placeOrder.length;
+		}
+		
+		if(catagory == 'nihon')
+		{
+			textNum += placeOrder.length;
+			textNum += autoOrder.length;
+		}
+			
 		if (textNum < 10)
 		{
-			document.getElementById("imgNum").innerHTML = "0" + textNum;
+			document.getElementById("imgNum").innerHTML = "00" + textNum;
 		}
 		else
 		{
-			document.getElementById("imgNum").innerHTML = textNum;
+			document.getElementById("imgNum").innerHTML = "0" + textNum;
 		}
 	
 		document.getElementById("imgCont").classList.toggle("displayNone");

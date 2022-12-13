@@ -10,7 +10,7 @@ html { -webkit-text-size-adjust:none; }
 
 p{
 font-size:86%;
-color:#ababab;
+color:#818181;
 }
 
 body{
@@ -23,6 +23,9 @@ body{
 	text-align: center;
 }
 
+.curved8{
+	border-radius:8px;
+}
 
 #logo{
   position:absolute;
@@ -35,8 +38,8 @@ body{
 li{
   color:#aaa;
   position:relative;
-  margin: 0px 15px 0px 12px;
-  font-size:85%;
+  margin: 0px 15px 0px 20px;
+  font-size:80%;
   font-weight: bold;
   text-transform: lowercase;
   display:inline;
@@ -120,13 +123,7 @@ a:hover{
 	display:inline;	
 }
 
-#contactimg{
-	 height:155px;
-	 width:155px;
-	 object-fit: cover;
-	 margin:80px auto 20px;
-	 border-radius:5px;
-}
+
 
 
 #menu{
@@ -136,7 +133,6 @@ a:hover{
 	text-align: right;
 	background-color:#F5F5F5;
 	padding:25px 15px;
-	border-radius:8px;
 	box-shadow: 1px 1px #ddd;
 }
 
@@ -144,7 +140,6 @@ a:hover{
 .container{
 	width:1035px;
 	background-color:#F5F5F5;
-	border-radius:8px;
 	margin:0px auto;
 	display: inline-grid;
 	padding:15px;
@@ -178,7 +173,6 @@ a:hover{
 #nihon35link{
 	width:fit-content;
 	background-color:#F5F5F5;
-	border-radius:8px;
 	margin:20px auto 0px;
 	padding:8px;
 	box-shadow: 1px 1px #ddd;
@@ -195,7 +189,6 @@ a:hover{
 	width:400px;
 	grid-template-rows: 1fr;
 	background-color:#F5F5F5;
-	border-radius:8px;
 	margin:0px auto;
 	padding:15px;
 	box-shadow: 1px 1px #ddd;
@@ -221,24 +214,18 @@ a:hover{
 	height:155px;
 	object-fit: cover;
 	cursor: pointer;
+	filter:grayscale(0.1);
 }
 
 .grid-item:hover{
 	filter: opacity(80%);
 }
 
-.grid-item-blank{
-	background-color:#F5F5F5;
-	border-radius:5px;
-	width:100%;
-	border-style: dashed;
-	border-color: #ddd;
-	border-width: 2px;
-}
 
 .bigimg{
 	cursor: pointer;
-	margin-bottom:55px;
+	margin-bottom:40px;
+	border-radius:5px;
 }
 
 .bigimg2{
@@ -266,7 +253,7 @@ a:hover{
 	border-style:solid;
 	border-color:#F5F5F5;;
 	background-color:#F5F5F5;
-	border-radius:5px;
+
 	box-shadow: 1px 1px #ddd;
 	overflow:hidden;
 	white-space: nowrap;
@@ -284,17 +271,17 @@ a:hover{
 #imgNum{
 	position: absolute;
     display: block;
-    bottom: -2px;
+    bottom: -21px;
     text-align: left;
     margin: 0px;
-    font-size: 300%;
+    font-size: 100%;
 	line-height:60px;
 	height:60px;
-	left:10px;
+	left:3px;
 	vertical-align:middle;
 	font-family:system-ui;
 	font-weight:bold;
-	color:#e7e7e7;
+	color:#afafaf;
 }
 
 #copy{
@@ -458,7 +445,7 @@ a:hover{
   }
 
 	li{
-		margin: 0px 8px 0px 8px;
+		margin: 0px 8px 0px 15px;
 	}
 	.bigimg{
 		max-width:525px;
@@ -478,7 +465,7 @@ a:hover{
   }
 
 	li{
-		margin: 0px 8px 0px 8px;
+		margin: 0px 10px 0px 10px;
 	}
 	
 	#logo{

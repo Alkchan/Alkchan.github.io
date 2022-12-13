@@ -1,5 +1,7 @@
 html { -webkit-text-size-adjust:none; }
 
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
 *{
   box-sizing: border-box;
   transition: margin 0.3s; 
@@ -68,16 +70,16 @@ li:first-of-type{
 }
 
 li:nth-child(2) > .triangleUp{
-	left:15px;
+	left:14px;
 }
 li:nth-child(3) > .triangleUp{
-	left:30px;
+	left:25px;
 }
 li:nth-child(4) > .triangleUp{
-	left:20px;
+	left:18px;
 }
 li:nth-child(5) > .triangleUp{
-	left:19px;
+	left:17px;
 }
 
 span{
@@ -194,6 +196,15 @@ a:hover{
 	display:inline-grid;
 }
 
+.contact2 img{
+	height:300px;
+	width:100%;
+	border-radius:6px;
+	object-position:0px;
+	object-fit:cover;
+
+}
+
 
 #places{
 }
@@ -213,13 +224,20 @@ a:hover{
 	height:155px;
 	object-fit: cover;
 	cursor: pointer;
-	filter:grayscale(0.1);
+	filter:grayscale(0.05);
 }
 
 .grid-item:hover{
 	filter: opacity(80%);
 }
 
+.grid-item-blank{
+    border-radius: 12px;
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border: 2px dashed #e9e9e9;
+}
 
 .bigimg{
 	cursor: pointer;
@@ -270,13 +288,12 @@ a:hover{
 #imgNum{
 	position: absolute;
     display: block;
-    bottom: -21px;
-    text-align: left;
+    bottom: -1px;
+    text-align: right;
     margin: 0px;
-    font-size: 100%;
-	line-height:60px;
-	height:60px;
-	left:3px;
+    font-size: 85%;
+	line-height:normal;
+	right:3px;
 	vertical-align:middle;
 	font-family:system-ui;
 	font-weight:bold;

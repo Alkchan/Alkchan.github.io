@@ -2,10 +2,9 @@ html { -webkit-text-size-adjust:none; }
 
 *{
   box-sizing: border-box;
+  transition: margin 0.3s; 
   transition: opacity 0.3s;
-  transition: left 0.3s;
-  transition: margin 0.3s;
-  
+  transition: //left 0.3s;
 }
 
 p{

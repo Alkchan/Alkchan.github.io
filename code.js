@@ -20,7 +20,7 @@
 	const urlParams = new URLSearchParams(urlString);
 	var catagory = urlParams.get('c');
 	var photoNum = urlParams.get('p');
-	var photoToggle = urlParams.get('t');
+	//var photoToggle = urlParams.get('t');
 	var url = "photoplaces/";
 		
 	// set defaults if no urlParams exist
@@ -119,13 +119,13 @@
 			
 		} );
 		
-		if (photoToggle == 1)
+		/*if (photoToggle == 1)
 		{
 			document.querySelector(".checkContainer").classList.toggle("displayNone");
 			document.getElementById('bigimg2').src = url + photoNum + "b.jpg";	
 			document.getElementById('bigimg2').classList.toggle("displayNone");	
 			document.getElementById('check').checked = false;
-		}
+		}*/
 
 		
 
@@ -153,7 +153,8 @@
 	//functions
 	function show(num, toggle)
 	{
-		window.location.href = "index.html?c=" + catagory + "&p=" + num + "&t=" + toggle;
+		//window.location.href = "index.html?c=" + catagory + "&p=" + num + "&t=" + toggle;
+		window.location.href = "index.html?c=" + catagory + "&p=" + num;
 	}
 
 	function showtn() 

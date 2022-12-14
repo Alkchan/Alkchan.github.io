@@ -4,9 +4,10 @@ html { -webkit-text-size-adjust:none; }
 
 *{
   box-sizing: border-box;
-  transition: margin 0.3s; 
-  transition: opacity 0.3s;
-  transition: //left 0.3s;
+  transition: all 0.3s; 
+  //transition: margin 0.3s; 
+  //transition: opacity 0.3s;
+ //transition: left 0.3s;
 }
 
 p{
@@ -270,7 +271,6 @@ a:hover{
 	border-style:solid;
 	border-color:#F5F5F5;;
 	background-color:#F5F5F5;
-
 	box-shadow: 1px 1px #ddd;
 	overflow:hidden;
 	white-space: nowrap;
@@ -298,6 +298,35 @@ a:hover{
 	font-family:system-ui;
 	font-weight:bold;
 	color:#afafaf;
+}
+
+#triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+	top: -38px;
+    right: -38px;
+    border: 38px solid #f4f4f4;
+    border-top: 38px solid transparent;
+    border-right: 38px solid transparent;
+    border-left: 38px solid transparent;
+    transform: rotate(45deg);
+}
+
+#svg{
+    position: absolute;
+    height: 30px;
+    top: 6px;
+    right: -16px;
+    z-index: 2;
+    opacity: 0.6;
+    transform: rotate(-45deg);
+}
+
+.bigimg:hover ~ #triangle{
+	opacity:1;
+
 }
 
 #copy{

@@ -8,6 +8,7 @@
 	}*/
 	
 	/*window.addEventListener("load", event => {
+	/*window.addEventListener("load", event => {
 	var image = document.getElementById('bigimg');
 	var isLoaded = image.complete && image.naturalHeight !== 0;
 	alert(isLoaded);
@@ -126,11 +127,6 @@
 			document.getElementById('bigimg2').classList.toggle("displayNone");	
 			document.getElementById('check').checked = false;
 		}*/
-
-		
-
-		
-		
 	}
 	else
 	{
@@ -148,6 +144,8 @@
 		}, 20);
 		
 		url = "photo" + catagory +"/";
+		
+
 	}
 	
 	//functions
@@ -175,9 +173,7 @@
 		document.getElementById('check').checked = false;
 		ticked();
 
-		window.location.href = "index.html?c=" + catagory + "&p=" + num;
-		
-		
+		window.location.href = "index.html?c=" + catagory + "&p=" + num;	
 	}
 		
 	function home()
@@ -189,7 +185,6 @@
 	{
 		window.open("https://www.alkchan.com/nihon35/");
 	}
-	
 	
 	document.getElementById("check").onclick = function() { ticked() };
 

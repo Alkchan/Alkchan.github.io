@@ -145,6 +145,22 @@
 		
 		url = "photo" + catagory +"/";
 		
+		var images = document.getElementsByClassName("grid-item");
+
+		for (i = 0; i < images.length; i++)
+		{
+			 images[i].classList.toggle("opacityNone");
+		}
+		
+		for (i = 0; i < images.length; i++)
+		{
+			if (images[i].complete) {
+			  images[i].classList.toggle("opacityNone");
+			}
+		}
+
+
+		
 
 	}
 	

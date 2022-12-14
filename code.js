@@ -145,6 +145,8 @@
 		
 		url = "photo" + catagory +"/";
 		
+		thumbnail load tests
+		/*
 		var images = document.getElementsByClassName("grid-item");
 
 		for (i = 0; i < images.length; i++)
@@ -157,7 +159,7 @@
 			if (images[i].complete) {
 			  images[i].classList.toggle("opacityNone");
 			}
-		}
+		}*/
 
 
 		

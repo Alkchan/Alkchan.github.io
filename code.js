@@ -145,7 +145,7 @@
 		
 		url = "photo" + catagory +"/";
 		
-		thumbnail load tests
+		//thumbnail load tests
 		/*
 		var images = document.getElementsByClassName("grid-item");
 

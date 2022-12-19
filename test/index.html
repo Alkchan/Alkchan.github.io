@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<title>Alkan Hassan - Film and Digital Photography</title>
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Arimo:400,700|Galdeano' rel='stylesheet' type='text/css'>
+	
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+	
+	
+	
+</head>
+
+<body>
+
+
+	<div id="menu" class="curved8" ><img id="logo" onclick="home()" src="logo.png"><li onclick="showCatagory('places')">places<div class="triangleUp"></div></li><li onclick="showCatagory('auto')">automotive<div class="triangleUp"></div></li><li onclick="showCatagory('nihon')">nihon35<div class="triangleUp"></div></li><li onclick="showCatagory('contact')">contact<div class="triangleUp"></div></li></div>
+	
+	<div id="lds-ring" class="lds-ring opacityNone"><div></div><div></div><div></div><div></div></div>
+
+	  
+	<div id="places" class="container curved8 displayNone opacityNone">
+		<img class="grid-item" onclick="show(31)" src="photoplaces/tn/31.jpg">
+		<img class="grid-item" onclick="show(27)" src="photoplaces/tn/27.jpg">
+		<img class="grid-item" onclick="show(26)" src="photoplaces/tn/26.jpg">
+		<img class="grid-item" onclick="show(25)" src="photoplaces/tn/25.jpg">
+		<img class="grid-item" onclick="show(23)" src="photoplaces/tn/23.jpg">
+		<img class="grid-item" onclick="show(22)" src="photoplaces/tn/22.jpg">
+		<img class="grid-item" onclick="show(21)" src="photoplaces/tn/21.jpg">
+		<img class="grid-item" onclick="show(32)" src="photoplaces/tn/32.jpg">
+		<img class="grid-item" onclick="show(20)" src="photoplaces/tn/20.jpg">
+		<img class="grid-item" onclick="show(19)" src="photoplaces/tn/19.jpg">
+		<img class="grid-item" onclick="show(18)" src="photoplaces/tn/18.jpg">
+		<img class="grid-item" onclick="show(28)" src="photoplaces/tn/28.jpg" style="object-position: -10px;">
+		<img class="grid-item" onclick="show(17)" src="photoplaces/tn/17.jpg">
+		<img class="grid-item" onclick="show(30)" src="photoplaces/tn/30.jpg" style="object-position: -25px">
+		<img class="grid-item" onclick="show(16)" src="photoplaces/tn/16.jpg">
+		<img class="grid-item" onclick="show(15)" src="photoplaces/tn/15.jpg">
+		<img class="grid-item" onclick="show(14)" src="photoplaces/tn/14.jpg"style="object-position: right">
+		<img class="grid-item" onclick="show(13)" src="photoplaces/tn/13.jpg" style="object-position: right">
+		<img class="grid-item" onclick="show(11)" src="photoplaces/tn/11.jpg">
+		<img class="grid-item" onclick="show(10)" src="photoplaces/tn/10.jpg">
+		<img class="grid-item" onclick="show(34)" src="photoplaces/tn/34.jpg" style="object-position: -50px">
+		<img class="grid-item" onclick="show(9)" src="photoplaces/tn/9.jpg">
+		<img class="grid-item" onclick="show(8)" src="photoplaces/tn/8.jpg" style="object-position: right">
+		<img class="grid-item" onclick="show(7)" src="photoplaces/tn/7.jpg">
+		<img class="grid-item" onclick="show(33)" src="photoplaces/tn/33.jpg">
+		<img class="grid-item" onclick="show(6)" src="photoplaces/tn/6.jpg">
+		<img class="grid-item" onclick="show(4)" src="photoplaces/tn/4.jpg">
+		<img class="grid-item" onclick="show(3)" src="photoplaces/tn/3.jpg">
+		<img class="grid-item" onclick="show(2)" src="photoplaces/tn/2.jpg" style="object-position: right">
+		<img class="grid-item" onclick="show(1)"  src="photoplaces/tn/1.jpg">
+		<img class="grid-item" onclick="show(35)"  src="photoplaces/tn/35.jpg" style="object-position: left">
+		<img class="grid-item" onclick="show(37)"  src="photoplaces/tn/37.jpg">
+	</div>
+
+	<div id="auto" class="container curved8 displayNone opacityNone">
+	  <img class="grid-item" onclick="show(19)" src="photoauto/tn/19.jpg">
+	  <img class="grid-item" onclick="show(18)" src="photoauto/tn/18.jpg" >
+	  <img class="grid-item" onclick="show(17)" src="photoauto/tn/17.jpg" >
+	  <img class="grid-item" onclick="show(16)" src="photoauto/tn/16.jpg" >
+	  <img class="grid-item" onclick="show(26)" src="photoauto/tn/26.jpg" style="object-position: right">
+	  <img class="grid-item" onclick="show(14)" src="photoauto/tn/14.jpg" >
+	  <img class="grid-item" onclick="show(13)" src="photoauto/tn/13.jpg" >
+	  <img class="grid-item" onclick="show(12)" src="photoauto/tn/12.jpg" >
+	  <img class="grid-item" onclick="show(11)" src="photoauto/tn/11.jpg" style="object-position: left">
+	  <img class="grid-item" onclick="show(22)" src="photoauto/tn/22.jpg">
+	  <img class="grid-item" onclick="show(10)" src="photoauto/tn/10.jpg" >
+	  <img class="grid-item" onclick="show(9)" src="photoauto/tn/9.jpg">
+	  <img class="grid-item" onclick="show(24)" src="photoauto/tn/24.jpg">
+	  <img class="grid-item" onclick="show(21)" src="photoauto/tn/21.jpg">
+	  <img class="grid-item" onclick="show(25)" src="photoauto/tn/25.jpg">
+	  <img class="grid-item" onclick="show(8)" src="photoauto/tn/8.jpg" >
+	  <img class="grid-item" onclick="show(7)" src="photoauto/tn/7.jpg" >
+	  <img class="grid-item" onclick="show(6)" src="photoauto/tn/6.jpg" >
+	  <img class="grid-item" onclick="show(23)" src="photoauto/tn/23.jpg" >
+	  <img class="grid-item" onclick="show(5)" src="photoauto/tn/5.jpg" >
+	  <img class="grid-item" onclick="show(4)" src="photoauto/tn/4.jpg" >
+	  <img class="grid-item" onclick="show(3)" src="photoauto/tn/3.jpg" >
+	  <img class="grid-item" onclick="show(2)" src="photoauto/tn/2.jpg" >
+	  <img class="grid-item" onclick="show(15)" src="photoauto/tn/15.jpg" >
+	</div>
+
+	<div id="nihon" class="container curved8 displayNone opacityNone">
+	  <img class="grid-item" onclick="show(14)" src="photonihon/tn/14.jpg"  style="object-position: left">
+	  <img class="grid-item" onclick="show(20)" src="photonihon/tn/20.jpg" >
+	  <img class="grid-item" onclick="show(15)" src="photonihon/tn/15.jpg" >
+	  <img class="grid-item" onclick="show(3)" src="photonihon/tn/3.jpg" >
+	  <img class="grid-item" onclick="show(5)" src="photonihon/tn/5.jpg" >
+	  <img class="grid-item" onclick="show(6)" src="photonihon/tn/6.jpg" >
+	  <img class="grid-item" onclick="show(7)" src="photonihon/tn/7.jpg" >
+	  <img class="grid-item" onclick="show(8)" src="photonihon/tn/8.jpg" >
+	  <img class="grid-item" onclick="show(9)" src="photonihon/tn/9.jpg" >
+	  <img class="grid-item" onclick="show(10)" src="photonihon/tn/10.jpg" >
+	  <img class="grid-item" onclick="show(11)" src="photonihon/tn/11.jpg" >
+	  <img class="grid-item" onclick="show(12)" src="photonihon/tn/12.jpg" >
+	  <img class="grid-item" onclick="show(13)" src="photonihon/tn/13.jpg" >
+	  <img class="grid-item" onclick="show(1)" src="photonihon/tn/1.jpg" >
+	  <img class="grid-item" onclick="show(16)" src="photonihon/tn/16.jpg" >
+	  <img class="grid-item" onclick="show(17)" src="photonihon/tn/17.jpg" >
+	  <img class="grid-item" onclick="show(18)" src="photonihon/tn/18.jpg" >
+	  <img class="grid-item" onclick="show(19)" src="photonihon/tn/19.jpg" >
+	  <img class="grid-item" onclick="show(2)" src="photonihon/tn/2.jpg" >
+	  <img class="grid-item" onclick="show(21)" src="photonihon/tn/21.jpg" >
+	  <img class="grid-item" onclick="show(22)" src="photonihon/tn/22.jpg" >
+	  <img class="grid-item" onclick="show(23)" src="photonihon/tn/23.jpg" >
+	  <img class="grid-item" onclick="show(24)" src="photonihon/tn/24.jpg" >
+	  <img class="grid-item" onclick="show(25)" src="photonihon/tn/25.jpg"  style="object-position: left">
+	  <img class="grid-item" onclick="show(26)" src="photonihon/tn/26.jpg" >
+	  <img class="grid-item" onclick="show(27)" src="photonihon/tn/27.jpg" >
+	  <img class="grid-item" onclick="show(28)" src="photonihon/tn/28.jpg" >
+	  <img class="grid-item" onclick="show(29)" src="photonihon/tn/29.jpg" >
+	  <img class="grid-item" onclick="show(30)" src="photonihon/tn/30.jpg" >
+	  <img class="grid-item" onclick="show(31)" src="photonihon/tn/31.jpg" >
+	</div>
+	
+	<p id="nihon35link" class="curved8 displayNone opacityNone" onclick="nihon35()">View archived nihon35.com site</p>
+
+	<div id="contact" class="contact2 curved8 displayNone opacityNone">
+	<p>Alkchan - Film and Digital Photography</p>
+	<span class="bold spaceBelow spaceAbove">Contact</span>
+	<a class="inline" href="mailto:alkanhassan@outlook.com">email</a><a class="inline" target=”_blank” href="https://www.instagram.com/alkchan/">instagram</a>
+
+	<a class="inline" class="spaceBelow" target=”_blank” href="https://twitter.com/alkchan">twitter</a>
+	<span class="bold spaceBelow spaceAbove">Web</span>
+	<a target=”_blank”  href="https://www.alkchan.com">www.alkchan.com</a>
+	<a target=”_blank”  href="https://www.nihon35.com">www.nihon35.com</a>
+
+	<p id="copy">Copyright © 2022 Alkan Hassan</p>
+	</div>
+
+	<div id="imgCont" class="imgCont curved8 displayNone">
+		<img id="bigimg" class="bigimg opacityNone" src="" onclick="showtn()"><img id="bigimg2" class="bigimg bigimg2 displayNone" src="" onclick="showtn()">
+		<div id="triangle" class="opacityNone">
+			<img id="svg" src="thumbnails.svg">
+		</div>
+	<p id="imgNum" class="opacityNone">15</p>
+		<label class="checkContainer displayNone">
+		  <input id="check" type="checkbox">
+		  <span class="checkmark"></span>
+		</label>
+	</div>
+
+	<img class="displayNone" src="blank.png">
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="code.js"></script>
+
+	
+</body>
+
+	
+	
+
+
+</html>

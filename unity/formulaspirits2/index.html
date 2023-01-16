@@ -4,9 +4,49 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Formula Spirits</title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	
+	p{
+		margin:10px;
+		text-transform:uppercase;
+	}
+
+body {
+		background-color: #e3e3e3;
+		margin-top:50px;
+		font-size: 75%;
+		color: #555;
+		font-family: 'Arimo', sans-serif;
+		text-align: center;
+		
+	}
+	
+	#unity-canvas{
+		border:10px solid #fff;
+		border-radius:5px;
+		box-shadow: 1px 1px 4px #c9c9c9;
+		width:90%;
+		max-width:1280px;
+		aspect-ratio:16/9;
+	}
+	
+	div{
+		width:1400px;
+		text-align: left;
+		margin:auto;
+		width:90%;
+		max-width:1280px;
+	}
+</style>
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #231F20"></canvas>
+  <body >
+    <div>
+		<p>Formula Spirits v0.1</p>
+	</div>
+	<canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #231F20"></canvas>
     <script src="Build/formulaspirits.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {

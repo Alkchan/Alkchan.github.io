@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Alk Dynamics 3.1</title>
+    <title>Unity WebGL Player | Alk Dynamics</title>
  
 <style>
 	* {
@@ -51,16 +51,16 @@ body {
 		<p>Alk Dynamics v3.3</p>
 	</div>
 	<canvas id="unity-canvas" style="background: #231F20"></canvas>
-    <script src="Build/alkdynamics3.2.loader.js"></script>
+    <script src="Build/alkdynamics.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/alkdynamics3.2.data.unityweb",
-        frameworkUrl: "Build/alkdynamics3.2.framework.js.unityweb",
-        codeUrl: "Build/alkdynamics3.2.wasm.unityweb",
+        dataUrl: "Build/alkdynamics.data.unityweb",
+        frameworkUrl: "Build/alkdynamics.framework.js.unityweb",
+        codeUrl: "Build/alkdynamics.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "AlkSoft",
-        productName: "Alk Dynamics 3.1",
-        productVersion: "3.1",
+        productName: "Alk Dynamics",
+        productVersion: "3.4",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });

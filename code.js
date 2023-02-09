@@ -145,21 +145,38 @@
 		
 		url = "photo" + catagory +"/";
 		
-		//thumbnail load tests
-		/*
-		var images = document.getElementsByClassName("grid-item");
-
-		for (i = 0; i < images.length; i++)
-		{
-			 images[i].classList.toggle("opacityNone");
-		}
 		
-		for (i = 0; i < images.length; i++)
-		{
-			if (images[i].complete) {
-			  images[i].classList.toggle("opacityNone");
-			}
-		}*/
+		/*
+		//thumbnail load tests
+		// Get all elements with the class "my-class"
+		const elements = document.getElementsByClassName("grid-item");
+		//const elements = document.querySelectorAll(".grid-item");
+
+		// Convert the collection into an array
+		const elementArray = Array.from(elements);
+
+		// You can now use the array as you would any other array
+		elementArray.forEach(element => {
+			
+			element.addEventListener("load", function ()
+			{ 
+				element.classList.toggle("opacityNone");
+			} );
+			
+			if (element.complete) {
+				element.classList.toggle("opacityOne");
+			} 
+			
+			
+			
+			
+			//console.log(element);
+		  
+		});
+		*/
+		
+		
+
 
 
 		

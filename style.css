@@ -226,6 +226,7 @@ a:hover{
 	object-fit: cover;
 	cursor: pointer;
 	filter:grayscale(0.05);
+	
 }
 
 .grid-item:hover{
@@ -388,6 +389,8 @@ a:hover{
 .opacityNone{
 	opacity:0;
 }
+
+
 
 
   /* The container */

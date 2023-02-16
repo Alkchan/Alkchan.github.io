@@ -3,10 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | rocketTag</title>
+    <title>Unity WebGL Player | Rocket Tag</title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	
+	p{
+		margin:20px 10px 10px 10px;
+		text-transform:uppercase;
+	}
+	
+	span{
+		margin:0px 10px 50px 10px;
+	}
+
+body {
+		background-color: #e3e3e3;
+		margin-top:50px;
+		font-size: 75%;
+		color: #555;
+		font-family: 'Arimo', sans-serif;
+		text-align: center;
+		
+	}
+	
+	#unity-canvas{
+		border:10px solid #fff;
+		border-radius:5px;
+		box-shadow: 1px 1px 4px #c9c9c9;
+		width:80%;
+		aspect-ratio:16/9;
+	}
+	
+
+</style>
   </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=1600 height=900 style="width: 1600px; height: 900px; background: #231F20"></canvas>
+  <body >
+
+	<canvas id="unity-canvas"  style="background: #231F20"></canvas>
     <script src="Build/rockettag.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -21,5 +56,6 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
-  </body>
+
+	</body>
 </html>

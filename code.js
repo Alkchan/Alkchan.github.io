@@ -194,8 +194,8 @@
 	{
 		num = 0;
 		
-		document.getElementById('check').checked = false;
-		ticked();
+		//document.getElementById('check').checked = false;
+		//ticked();
 		
 		window.location.href = "index.html?c=" + catagory + "&p=" + num;
 	}

@@ -146,34 +146,12 @@
 		url = "photo" + catagory +"/";
 		
 		
-		/*
-		//thumbnail load tests
-		// Get all elements with the class "my-class"
-		const elements = document.getElementsByClassName("grid-item");
-		//const elements = document.querySelectorAll(".grid-item");
+		// Get all the thumbnail images on the page
+		const thumbnails = document.querySelectorAll('.grid-item');
 
-		// Convert the collection into an array
-		const elementArray = Array.from(elements);
-
-		// You can now use the array as you would any other array
-		elementArray.forEach(element => {
-			
-			element.addEventListener("load", function ()
-			{ 
-				element.classList.toggle("opacityNone");
-			} );
-			
-			if (element.complete) {
-				element.classList.toggle("opacityOne");
-			} 
-			
-			
-			
-			
-			//console.log(element);
-		  
-		});
-		*/
+		// Loop through each thumbnail image
+		thumbnails.forEach(myFunction);
+		
 		
 		
 
@@ -184,6 +162,14 @@
 	}
 	
 	//functions
+	function myFunction(item)
+	{
+		item.addEventListener('load', () =>
+		{
+			item.classList.toggle("opacityNone");
+		});
+	}
+		
 	function show(num, toggle)
 	{
 		//window.location.href = "index.html?c=" + catagory + "&p=" + num + "&t=" + toggle;

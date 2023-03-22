@@ -147,10 +147,10 @@
 		
 		
 		// Get all the thumbnail images on the page
-		const thumbnails = document.querySelectorAll('.grid-item');
+		//const thumbnails = document.querySelectorAll('.grid-item');
 
 		// Loop through each thumbnail image
-		thumbnails.forEach(myFunction);
+		//thumbnails.forEach(myFunction);
 		
 		
 		
@@ -191,8 +191,8 @@
 		num = 0;
 		catagory = catName;
 
-		document.getElementById('check').checked = false;
-		ticked();
+		//document.getElementById('check').checked = false;
+		//ticked();
 
 		window.location.href = "index.html?c=" + catagory + "&p=" + num;	
 	}
@@ -207,7 +207,7 @@
 		window.open("https://www.alkchan.com/nihon35/");
 	}
 	
-	document.getElementById("check").onclick = function() { ticked() };
+	//document.getElementById("check").onclick = function() { ticked() };
 
 	function ticked() {
 		//document.querySelector("div > img:first-child").classList.toggle("moveToLeft");
@@ -218,7 +218,7 @@
 	document.addEventListener('keydown', function(event) {
     if(event.keyCode == 37) {
         //alert('Left was pressed');
-		document.getElementById('check').checked = false;
+		//document.getElementById('check').checked = false;
     }
 });
 

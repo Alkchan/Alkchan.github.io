@@ -2,17 +2,6 @@
 		console.log("Page has fully loaded");
 	})*/
 	
-	/*window.addEventListener("load", pageFullyLoaded, false);
-	function pageFullyLoaded(e)
-	{
-	}*/
-	
-	/*window.addEventListener("load", event => {
-	/*window.addEventListener("load", event => {
-	var image = document.getElementById('bigimg');
-	var isLoaded = image.complete && image.naturalHeight !== 0;
-	alert(isLoaded);
-	});*/
 	
 	/*setTimeout(function(){
 	}, 300);*/
@@ -148,9 +137,26 @@
 		
 		// Get all the thumbnail images on the page
 		//const thumbnails = document.querySelectorAll('.grid-item');
+		var tnImages = document.querySelectorAll('.grid-item');
 
-		// Loop through each thumbnail image
-		//thumbnails.forEach(myFunction);
+		
+		// Loop through each image
+		
+		for (var i = 0; i < tnImages.length; i++) {
+		// Check if the image is already loaded
+			if (tnImages[i].complete) {
+			// Add the "loaded" class immediately
+				tnImages[i].classList.add("opacityFull");
+			}
+			else
+			{
+			// Add the onload event handler
+			tnImages[i].onload = function() {
+			// Add the "loaded" class
+			this.classList.add("opacityFull");
+			};
+		  }
+		}
 		
 		
 		

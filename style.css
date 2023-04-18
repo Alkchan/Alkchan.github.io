@@ -226,6 +226,7 @@ a:hover{
 	object-fit: cover;
 	cursor: pointer;
 	filter:grayscale(0.05);
+	opacity:0;
 	
 }
 
@@ -388,6 +389,10 @@ a:hover{
 
 .opacityNone{
 	opacity:0;
+}
+
+.opacityFull{
+	opacity:1;
 }
 
 

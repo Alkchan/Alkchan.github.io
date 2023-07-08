@@ -46,13 +46,13 @@
 	{
 		y[1].style.color = "#666";
 		document.querySelector("li:nth-child(3) > .triangleUp").style.display = "block";
-		var textNum = autoOrder.indexOf(parseInt(photoNum),0) + 1;
+		var textNum = autoOrder.indexOf(parseInt(photoNum),0);
 	}
 	else if (catagory == 'nihon')
 	{
 		y[2].style.color = "#666";
 		document.querySelector("li:nth-child(4) > .triangleUp").style.display = "block";
-		var textNum = nihonOrder.indexOf(parseInt(photoNum),0) + 1;
+		var textNum = nihonOrder.indexOf(parseInt(photoNum),0) ;
 	}
 	else if (catagory == 'contact')
 	{

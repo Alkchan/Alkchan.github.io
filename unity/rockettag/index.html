@@ -36,10 +36,20 @@ body {
 		aspect-ratio:16/9;
 	}
 	
+	div{
+		
+		text-align: left;
+		margin:auto;
+		width:80%;
+		//max-width:1300px;
+	}
 
 </style>
   </head>
   <body >
+        <div>
+		<p>Rocket Tag v0.1</p>
+	</div>
 
 	<canvas id="unity-canvas"  style="background: #231F20"></canvas>
     <script src="Build/rockettag.loader.js"></script>
@@ -56,6 +66,14 @@ body {
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
+		<div>
+			<p>How to play</p>
+			<span>Touch opponents rocket to tag them (2 players only)</span>
+			<p>Controls</p>
+			<span><b>Player 1: </b>Z & X (left / right thruster)</span>
+			<br>
+			<span><b>Player 2 </b>< & > (left / right thruster)</span>
+		</div>
 
 	</body>
 </html>

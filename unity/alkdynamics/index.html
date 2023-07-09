@@ -1,19 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Alk Dynamics 3.1</title>
- 
-<style>
+    <title>Unity WebGL Player | Alk Dynamics</title>
+	<style>
 	* {
 		box-sizing: border-box;
 	}
 	
 	p{
-		margin:10px;
+		margin:20px 10px 10px 10px;
 		text-transform:uppercase;
+	}
+	
+	span{
+		margin:0px 10px 50px 10px;
 	}
 
 body {
@@ -44,19 +46,18 @@ body {
 		max-width:1420px;
 	}
 </style>
-
- </head>
-  <body >
-	<div>
+  </head>
+  <body>
+  	<div>
 		<p>Alk Dynamics v3.4</p>
 	</div>
-	<canvas id="unity-canvas" style="background: #231F20"></canvas>
-    <script src="Build/alkdynamics.loader.js"></script>
+    <canvas id="unity-canvas" width=1400 height=788 style="width: 1400px; height: 788px; background: #231F20"></canvas>
+    <script src="Build/alkdynamicsLatest.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/alkdynamics.data.unityweb",
-        frameworkUrl: "Build/alkdynamics.framework.js.unityweb",
-        codeUrl: "Build/alkdynamics.wasm.unityweb",
+        dataUrl: "Build/alkdynamicsLatest.data.unityweb",
+        frameworkUrl: "Build/alkdynamicsLatest.framework.js.unityweb",
+        codeUrl: "Build/alkdynamicsLatest.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "AlkSoft",
         productName: "Alk Dynamics",
@@ -65,5 +66,11 @@ body {
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
+			<div>
+			<p><b>Vehicle Controls</b></p>
+			<span><b>Keyboard:</b> Arrow Keys (throttle, brake & steering)</span>
+			<br>
+			<span><b>Gamepad:</b> PS5 Dual Sense gamepad supported</span>
+		</div>
   </body>
 </html>

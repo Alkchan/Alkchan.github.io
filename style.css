@@ -130,7 +130,7 @@ a:hover{
 
 #menu{
 	position:relative;
-	width:1035px;
+	width:1044px;
 	margin:35px auto 35px;
 	text-align: right;
 	background-color:#F5F5F5;
@@ -140,7 +140,7 @@ a:hover{
 
 
 .container{
-	width:1035px;
+	width:1044px;
 	background-color:#F5F5F5;
 	margin:0px auto;
 	display: inline-grid;
@@ -269,7 +269,7 @@ a:hover{
 	margin:0px auto;
 	position:relative;
 	width:fit-content;
-	border-width:5px 5px 5px 5px;
+	border-width:10px;
 	border-style:solid;
 	border-color:#F5F5F5;;
 	background-color:#F5F5F5;
@@ -290,12 +290,12 @@ a:hover{
 #imgNum{
 	position: absolute;
     display: block;
-    bottom: -1px;
+    bottom: -3px;
     text-align: right;
     margin: 0px;
     font-size: 85%;
 	line-height:normal;
-	right:3px;
+	right:1px;
 	vertical-align:middle;
 	font-family:system-ui;
 	font-weight:bold;
@@ -451,13 +451,13 @@ a:hover{
 @media screen and (max-width: 1060px) {
 	.container
 	{
-	 width:865px;
+	 width:885px;
 	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
 
 	#menu
 	{
-	 width:865px;
+	 width:885px;
 	}
 
 	.bigimg{
@@ -474,12 +474,12 @@ a:hover{
 @media screen and (max-width: 875px) {
   .container
   {
-     width:695px;
+     width:715px;
      grid-template-columns:1fr 1fr 1fr 1fr;
   }
   #menu
   {
-     width:695px;
+     width:715px;
   }
 	.bigimg{
 		max-width:695px;
@@ -489,12 +489,12 @@ a:hover{
 @media screen and (max-width: 700px) {
   .container
   {
-     width:525px;
+     width:545px;
      grid-template-columns:1fr 1fr 1fr;
   }
   #menu
   {
-     width:525px;
+     width:545px;
   }
 
 	li{

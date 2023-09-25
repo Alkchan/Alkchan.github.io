@@ -3,38 +3,121 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Alk Grand Prix</title>
+    <title>Unity WebGL Player | Battle Grand Prix</title>
+	<style>
+*{
+  box-sizing: border-box;
+  transition: all 0.3s; 
+  margin:0px;
+  padding:0px;
+}
+
+body{
+  background-color:#eee;
+}
+
+div{
+  width:fit-content;
+  background-color: #f9f9f9;
+  margin: 50px auto;
+  box-shadow: -20px 20px 40px -10px #ccc;
+  border:25px solid #f9f9f9;
+  display:block;
+  border-radius:4px;
+}
+
+img{
+  border-radius:2px;
+}
+
+.small{
+  font-family: system-ui;
+  font-weight:normal;
+  display:block;
+  color:#858585;
+  font-size:80%;
+}
+
+.big{
+ font-family: system-ui;
+ font-weight:bold;
+ font-size:95%;
+ color:#aaa;
+ display:block;
+  margin:5px 0px 0px 0px;
+}
+
+.med{
+ font-family: system-ui;
+ font-weight:bold;
+ font-size:80%;
+ color:#aaa;
+ display:block;
+  margin-top:20px;
+
+}
+
+button {
+  background-color: #eee; /* Green */
+  border: none;
+  color: #aaa;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border: solid 1px #ccc;
+  margin:4px 5px 0px 0px;
+  font-weight:bold;
+  
+}
+
+
+
+</style>
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #231F20"></canvas>
-    <script src="Build/battlegrandprix.loader.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
+	<body>
+		<div>
+			<canvas id="unity-canvas" width=1400 height=788 tabindex="-1" style="width: 1400px; height: 788px; background: #231F20"></canvas>
+			<script src="Build/battlegrandprix.loader.js"></script>
+			<script>
+			  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+				// Mobile device style: fill the whole browser client area with the game canvas:
+				var meta = document.createElement('meta');
+				meta.name = 'viewport';
+				meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+				document.getElementsByTagName('head')[0].appendChild(meta);
 
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        canvas.style.position = "fixed";
+				var canvas = document.querySelector("#unity-canvas");
+				canvas.style.width = "100%";
+				canvas.style.height = "100%";
+				canvas.style.position = "fixed";
 
-        document.body.style.textAlign = "left";
-      }
+				document.body.style.textAlign = "left";
+			  }
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/battlegrandprix.data.gz",
-        frameworkUrl: "Build/battlegrandprix.framework.js.gz",
-        codeUrl: "Build/battlegrandprix.wasm.gz",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "AlkSoft",
-        productName: "Alk Grand Prix",
-        productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script>
-  </body>
+			  createUnityInstance(document.querySelector("#unity-canvas"), {
+				dataUrl: "Build/battlegrandprix.data.unityweb",
+				frameworkUrl: "Build/battlegrandprix.framework.js.unityweb",
+				codeUrl: "Build/battlegrandprix.wasm.unityweb",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "AlkSoft",
+				productName: "Battle Grand Prix",
+				productVersion: "0.1",
+				// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+				// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+			  });
+			</script>
+			<span class="big" >Battle Grand Prix 0.1</span>
+			<span class="med" >CONTROLS</span>
+			<span class="small" ><b>Keyboard:</b> Arrow Keys (throttle, brake & steering)</span>
+			<span class="small" ><b>Gamepad:</b> Playstation 5 Dual Sense gamepad supported</span>
+			<span class="med" >HOW TO PLAY</span>
+			<span class="small" >Race from the back of the grid in an attempt to finish in 1st place. You have just 3 laps! Hit the R key to restart the race.</span>
+		</div>
+
+
+	</body>
 </html>
+
+

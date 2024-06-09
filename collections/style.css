@@ -1,0 +1,109 @@
+html { -webkit-text-size-adjust:none; }
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+ 
+#logo{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%); 
+	left:20px;
+	cursor: pointer;
+}
+
+p{
+	position:relative;
+	font-size:90%;
+	color:#818181;
+	top:5px;
+	margin-right:20px;
+}
+
+body{
+	background-color:#ebebeb;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	font-size:100%;
+	color:#999;
+	font-family: 'Arimo', sans-serif;
+	text-align: left;
+	white-space: nowrap;
+
+}
+
+.curved8{
+	border-radius:8px;
+}
+  
+#menu{
+	position:fixed;
+	width:600px;
+	margin:15px;
+	text-align: right;
+	background-color:#F5F5F5;
+	box-shadow: 1px 1px #ddd;
+	height:50px;
+}
+
+img:not(#menu img){
+	display:inline-block;
+	margin-left:15px;
+	margin-top:80px;
+	max-height:850px;
+	height: calc(100vh - 110px) ;
+}
+
+
+@media screen and (orientation:portrait) {
+
+	
+	
+	img:not(#menu img){
+		display:block;
+		//width: calc(100vw - 40px) ;
+		width: 100vw ;
+		max-width:1275px;
+		margin:auto;
+		margin-bottom:10px;
+		height:auto;
+	}
+	
+	img.v:not(#menu img){
+		max-width: 567px;
+	}
+  
+
+  
+	#menu{
+		width: calc(100vw - 200px) ;
+		position:fixed;
+		text-align: center;
+		left:100px;
+		top:10px;
+		height:70px;
+		margin:0px;
+	}
+  
+	#logo{
+		position:relative;
+		left:0px;
+		top:25px;
+		width:90px;
+	}
+  
+	p{
+		top:3px;
+		margin-right:0px;
+	}
+	
+	body{
+		margin:95px 0px 0px 0px;
+	}
+	
+	.curved8{
+		//border-radius:0px;
+	}
+}

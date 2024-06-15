@@ -18,8 +18,7 @@ p{
 	position:relative;
 	font-size:90%;
 	color:#818181;
-	top:5px;
-	margin-right:20px;
+	top:0px;
 }
 
 body{
@@ -40,18 +39,18 @@ body{
   
 #menu{
 	position:fixed;
-	width:600px;
+	width:fit-content;
 	margin:15px;
-	text-align: right;
+	padding:0px 10px;
 	background-color:#F5F5F5;
 	box-shadow: 1px 1px #ddd;
-	height:50px;
+
 }
 
 img:not(#menu img){
 	display:inline-block;
 	margin-left:15px;
-	margin-top:80px;
+	margin-top:75px;
 	max-height:850px;
 	height: calc(100vh - 110px) ;
 }
@@ -78,15 +77,16 @@ img:not(#menu img){
 
   
 	#menu{
-		//width: calc(100vw - 20px) ;
-		width:fit-content;
-		position:relative;
-		text-align: center;
-		left:0px;
+		position:fixed;
+		//width:fit-content;
+		width:90vw;
+		margin:15px;
+		padding:0px 10px;
+		background-color:#F5F5F5;
+		box-shadow: 1px 1px #ddd;
 		top:0px;
-		//height:70px;
-		margin:auto;
-		padding:10px;
+		text-align:center;
+	
 	}
   
 	#logo{
@@ -96,13 +96,10 @@ img:not(#menu img){
 		width:90px;
 	}
   
-	p{
-		top:0px;
-		margin-right:0px;
-	}
+
 	
 	body{
-		margin:10px 0px 0px 0px;
+		margin:75px 0px 0px 0px;
 	}
 	
 	.curved8{

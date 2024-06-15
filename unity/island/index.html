@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
+    <div id="main">
+
       <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -18,11 +19,9 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">islandDrive</div>
       </div>
-    </div>
+
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -118,5 +117,13 @@
       document.body.appendChild(script);
 
     </script>
+			<span class="big" >NAME</span>
+			<span class="med" >CONTROLS</span>
+			<span class="small" ><b>Keyboard:</b> Arrow Keys (throttle, brake & steering)</span>
+			<span class="small" ><b>Gamepad:</b> Playstation 5 gamepad supported</span>
+			<span class="med" >HOW TO PLAY</span>
+			<span class="small" >Waka waka waka!</span>
+			</div>
+			<div id="unity-fullscreen-button"></div>
   </body>
 </html>

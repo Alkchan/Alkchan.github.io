@@ -78,13 +78,15 @@ img:not(#menu img){
 
   
 	#menu{
-		width: calc(100vw - 200px) ;
-		position:fixed;
+		//width: calc(100vw - 20px) ;
+		width:fit-content;
+		position:relative;
 		text-align: center;
-		left:100px;
-		top:10px;
-		height:70px;
-		margin:0px;
+		left:0px;
+		top:0px;
+		//height:70px;
+		margin:auto;
+		padding:10px;
 	}
   
 	#logo{
@@ -95,12 +97,12 @@ img:not(#menu img){
 	}
   
 	p{
-		top:3px;
+		top:0px;
 		margin-right:0px;
 	}
 	
 	body{
-		margin:95px 0px 0px 0px;
+		margin:10px 0px 0px 0px;
 	}
 	
 	.curved8{

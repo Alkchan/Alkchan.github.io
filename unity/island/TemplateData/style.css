@@ -9,24 +9,24 @@
 
 
 body{
-	padding: 0; margin: 0;
 	background-color:#eee;
+  text-align: center;
 }
 
 div#main{
   width:fit-content;
   background-color: #f9f9f9;
-  margin: 25px auto;
+  margin: 25px auto 80px;
   box-shadow: -20px 20px 40px -10px #ccc;
   border:25px solid #f9f9f9;
   display:block;
   border-radius:4px;
+  position:relative;
+  text-align: left;
 }
 
 #unity-canvas{
-  width:90%;
-  max-width:1920px;
-  aspect-ratio:16/9;
+
 }
 
 img{
@@ -73,6 +73,41 @@ button {
   margin:4px 5px 0px 0px;
   font-weight:bold;
   
+}
+
+#resButton{
+  background-color: #f9f9f9;
+  padding:10px 8px;
+  box-shadow: 0px 0px 0px 0px #ccc;
+  border:1px solid #999;
+  display:block;
+  border-radius:4px;
+  position:relative;
+  margin:15px auto;
+  width:fit-content;
+}
+
+#resButton .med{
+   margin-top:0px;
+}
+
+#fullscreen-Button{
+  background-color: #f9f9f9;
+  margin: 5px;
+  padding:10px 8px;
+  box-shadow: 0px 0px 0px 0px #ccc;
+  border:1px solid #999;
+  display:block;
+  border-radius:4px;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  cursor:pointer; 
+width:fit-content;
+}
+
+#fullscreen-Button .med{
+   margin-top:0px;
 }
 
 #unity-container { position: absolute }

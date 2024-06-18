@@ -19,16 +19,32 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-fullscreen-button"></div>
+
       </div>
 
-    <script>
+    
+			<span class="big" >NAME</span>
+			<span class="med" >CONTROLS</span>
+			<span class="small" ><b>Keyboard:</b> Arrow Keys (throttle, brake & steering)</span>
+			<span class="small" ><b>Gamepad:</b> Playstation 5 gamepad supported</span>
+			<span class="med" >HOW TO PLAY</span>
+			<span class="small" >Waka waka waka!</span>
+			<div id="fullscreen-Button"><span class="med" >FULLSCREEN</span></div>
+			</div>
+			
+	<span class="small" ><b>PERFORMANCE ISSUES?</b><br>
+  1. Make sure you have disabled any desktop resolution scaling (especially on laptops)<br>2.Try a different web browser<br>3.Try the lower resolution version below</span>
+<div id="resButton"><span class="med" >720P VERSION</span></div>
+			<script>
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      //var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+	  var fullscreenButton = document.querySelector("#fullscreen-Button");
+	  
+	
       var warningBanner = document.querySelector("#unity-warning");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -117,13 +133,5 @@
       document.body.appendChild(script);
 
     </script>
-			<span class="big" >NAME</span>
-			<span class="med" >CONTROLS</span>
-			<span class="small" ><b>Keyboard:</b> Arrow Keys (throttle, brake & steering)</span>
-			<span class="small" ><b>Gamepad:</b> Playstation 5 gamepad supported</span>
-			<span class="med" >HOW TO PLAY</span>
-			<span class="small" >Waka waka waka!</span>
-			</div>
-			<div id="unity-fullscreen-button"></div>
   </body>
 </html>

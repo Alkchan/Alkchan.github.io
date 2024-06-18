@@ -14,7 +14,8 @@ body{
 }
 
 div#main{
-  width:fit-content;
+  //width:fit-content;
+   width:90vw;
   background-color: #f9f9f9;
   margin: 25px auto 80px;
   box-shadow: -20px 20px 40px -10px #ccc;

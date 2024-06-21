@@ -9,33 +9,31 @@
   </head>
   <body>
     <div id="main">
-
-      <canvas id="unity-canvas" style="width: 100%;" width=1920  height=1080 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-
-      </div>
-
-    
-			<span class="big" >NAME</span>
-			<span class="med" >CONTROLS</span>
-			<span class="small" ><b>Keyboard:</b> Arrow Keys (throttle, brake & steering)</span>
-			<span class="small" ><b>Gamepad:</b> Playstation 5 gamepad supported</span>
-			<span class="med" >HOW TO PLAY</span>
-			<span class="small" >Waka waka waka!</span>
-			<div id="fullscreen-Button"><span class="med" >FULLSCREEN</span></div>
+		<canvas id="unity-canvas" style="width: 100%; max-width:1920px;" width=1920  height=1080 tabindex="-1"></canvas>
+		<div id="unity-loading-bar">
+			<div id="unity-logo"></div>
+			<div id="unity-progress-bar-empty">
+				<div id="unity-progress-bar-full"></div>
 			</div>
-			
-	<span class="small" ><b>PERFORMANCE ISSUES?</b><br>
-  1. Make sure you have disabled any desktop resolution scaling (especially on laptops)<br>2.Try a different web browser<br>3.Try the lower resolution version below</span>
-<div id="resButton"><span class="med" >720P VERSION</span></div>
-			<script>
+		</div>
+		<div id="unity-warning"> </div>
+		<div id="unity-footer"></div>
+		<span class="big" >ALK DYNAMICS 3.0 - TIME TRIAL</span>
+		<span class="med" >CONTROLS</span>
+		<span class="small" ><b>Keyboard:</b> Arrow Keys (throttle, brake & steering)</span>
+		<span class="small" ><b>Gamepad:</b> Playstation 5 gamepad supported</span>
+		<span class="med" >HOW TO PLAY</span>
+		<span class="small" style="font-size:12.8px; width:65%;">Drive about, go easy on the throttle when coming out of slow bends - your fastest laptimes are recorded, full screen is recommended!</span>
+		<div id="fullscreen-Button"><div id="arrowContainer"><span>TRY ME</span>
+  <svg  width="40" height="30" viewBox="0 0 296.04177 270.56307">
+    <path stroke="#b51c1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="20.00000191" fill="#b51c1c" d="M147.63414 229.90853v-30.65582H10.000001V71.110572H147.63414V9.998741l69.26201 62.333441c38.0941 34.283388 69.34214 62.556498 69.4401 62.829128.0979.27262-30.46928 28.05936-67.92718 61.74832-37.45793 33.68895-68.70597 61.79311-69.44012 62.45368l-1.33481 1.20104v-30.65582z"/>
+  </svg>
+</div><span class="med" >FULLSCREEN</span></div>
+		</div>
+		<span class="small" ><b>PERFORMANCE ISSUES?</b><br>1. Make sure you have disabled any desktop resolution scaling (especially on laptops)<br>2.Try a different web browser<br>3.Try the lower resolution version below</span>
+		<div id="resButton"><span class="med" >720P VERSION</span></div>
+
+<script>
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");

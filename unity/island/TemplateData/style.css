@@ -11,11 +11,13 @@
 body{
 	background-color:#eee;
   text-align: center;
+  font-family: system-ui;
 }
 
 div#main{
   //width:fit-content;
    width:90vw;
+   max-width:1920px;
   background-color: #f9f9f9;
   margin: 25px auto 80px;
   box-shadow: -20px 20px 40px -10px #ccc;
@@ -103,12 +105,47 @@ button {
   position:absolute;
   right:0px;
   bottom:0px;
-  cursor:pointer; 
-width:fit-content;
 }
 
 #fullscreen-Button .med{
    margin-top:0px;
+}
+
+#fullscreenButton:hover{
+  background-color: #eee;
+}
+
+#arrowContainer{
+  margin: auto;
+  box-shadow: 0px 0px 0px 0px #ccc;
+  border:0px;
+  border-radius:0px;
+  position:absolute;
+  width:67px;
+  height:26px;
+  background-color:#b51c1c;
+  animation: backandforth 1s ease-in-out 0s;
+  animation-iteration-count:infinite;
+  top:6px;
+  left:-200px;
+  border-radius:2px;
+  padding:1px;
+  text-align:center;
+}
+#arrowContainer svg{
+  position:absolute;
+  top:-2px;
+  left:70px;
+}
+#arrowContainer span{
+  color:#fff;
+  font-weight:bold;
+  font-size:90%;
+}
+@keyframes backandforth {
+  0%{left:-110px;}
+  50%{left:-100px;}
+  100%{left:-110px;}
 }
 
 #unity-container { position: absolute }

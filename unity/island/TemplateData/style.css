@@ -6,18 +6,28 @@
    outline: none;
 }
 
-
-
 body{
 	background-color:#eee;
   text-align: center;
   font-family: system-ui;
 }
 
-div#main{
-  //width:fit-content;
-   width:90vw;
-   max-width:1920px;
+#main{
+  width:90vw;
+  max-width:1920px;
+  background-color: #f9f9f9;
+  margin: 25px auto 80px;
+  box-shadow: -20px 20px 40px -10px #ccc;
+  border:25px solid #f9f9f9;
+  display:block;
+  border-radius:4px;
+  position:relative;
+  text-align: left;
+}
+
+#main720{
+  width:90vw;
+  max-width:1280px;
   background-color: #f9f9f9;
   margin: 25px auto 80px;
   box-shadow: -20px 20px 40px -10px #ccc;
@@ -29,15 +39,10 @@ div#main{
 }
 
 #unity-canvas{
-
 }
 
-img{
-  border-radius:2px;
-}
 
 .small{
-  font-family: system-ui;
   font-weight:normal;
   display:block;
   color:#858585;
@@ -45,7 +50,7 @@ img{
 }
 
 .big{
- font-family: system-ui;
+
  font-weight:bold;
  font-size:95%;
  color:#aaa;
@@ -54,40 +59,25 @@ img{
 }
 
 .med{
- font-family: system-ui;
  font-weight:bold;
  font-size:80%;
  color:#aaa;
  display:block;
-  margin-top:20px;
+ margin-top:20px;
 
 }
 
-button {
-  background-color: #eee; /* Green */
-  border: none;
-  color: #aaa;
-  padding: 5px 7px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  border: solid 1px #ccc;
-  margin:4px 5px 0px 0px;
-  font-weight:bold;
-  
-}
 
 #resButton{
   background-color: #f9f9f9;
   padding:10px 8px;
-  box-shadow: 0px 0px 0px 0px #ccc;
   border:1px solid #999;
   display:block;
   border-radius:4px;
   position:relative;
   margin:15px auto;
   width:fit-content;
+  cursor:pointer;
 }
 
 #resButton .med{
@@ -98,28 +88,24 @@ button {
   background-color: #f9f9f9;
   margin: 5px;
   padding:10px 8px;
-  box-shadow: 0px 0px 0px 0px #ccc;
   border:1px solid #999;
   display:block;
   border-radius:4px;
   position:absolute;
   right:0px;
   bottom:0px;
+  cursor:pointer;
 }
 
 #fullscreen-Button .med{
    margin-top:0px;
 }
 
-#fullscreenButton:hover{
+#fullscreen-Button:hover{
   background-color: #eee;
 }
 
 #arrowContainer{
-  margin: auto;
-  box-shadow: 0px 0px 0px 0px #ccc;
-  border:0px;
-  border-radius:0px;
   position:absolute;
   width:67px;
   height:26px;
